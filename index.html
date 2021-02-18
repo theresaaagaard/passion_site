@@ -1,16 +1,122 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="da">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="">
+    <title>Drag To-Go</title>
+
 </head>
 
 <body>
-
     <style></style>
+    <header>
+        <nav>
+           <a href=""><img src="" alt="Logo"></a>
+            <div id="menuknap">☰</div>
+            <a href="index.html">Forside</a>
+            <a href="index.html#booking">Booking</a>
+            <a href="">Galleri</a>
+            <a href="">Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="splash"></section>
+
+        <section id="liste">
+            <h3 class="sorter"></h3>
+            <div id="kategorier" class="hidden">
+                <button data-kategori="sang">Sang: </button>
+                <button data-kategori="dans">Dans: </button>
+                <button data-kategori="komik">Komik: </button>
+                <button data-kategori="makeup">Makeup: </button>
+            </div>
+
+            <div id="oversigt"></div>
+
+        </section>
+
+        <section id="booking">
+            <div>
+                <h2>Book en drag queen:</h2>
+                <p>Udfyld formularen og book din favorit queen i dag.</p>
+            </div>
+            <div>
+                <form action="">
+                    <div>
+                        <label for="navn">
+                            <p class="overskrift">Fornavn og efternavn</p>
+                            <input placeholder="fx Tilde Jensen" name="navn" type="text" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="mail">
+                            <p class="overskrift">E-mail</p>
+                            <input placeholder="fx tilde@jensen.dk" name="e-mail" type="text" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="mail">
+                            <p class="overskrift">E-mail</p>
+                            <input placeholder="fx tilde@jensen.dk" name="e-mail" type="text" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="mail">
+                            <p class="overskrift">E-mail</p>
+                            <input placeholder="fx tilde@jensen.dk" name="e-mail" type="text" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="mail">
+                            <p class="overskrift">E-mail</p>
+                            <input placeholder="fx tilde@jensen.dk" name="e-mail" type="text" required>
+                        </label>
+                    </div>
+                    <button>Book</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="galleri">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </section>
+
+        <template>
+            <article>
+                <p class="navn"></p>
+                <img class="billede" src="" alt="">
+                <button>Se mere</button>
+            </article>
+        </template>
+
+
+    </main>
+
+
+
+
+    <footer>
+        <h2>Overskrift</h2>
+        <a href="">Contact</a>
+        <a href="">About</a>
+        <a href="">Social Media</a>
+    </footer>
+
+
+
+
+
     <script></script>
 </body>
 
