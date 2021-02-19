@@ -1,0 +1,104 @@
+* {
+    margin: 0 padding: 0;
+
+}
+
+img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+body {
+    font-family: sans-serif;
+
+}
+
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 0.9rem;
+    ;
+    font-weight: 600;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+
+
+
+
+/*LINKS*/
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 5px 20px;
+    background-color: white;
+}
+
+button:hover {
+    background-color: none;
+    color: #FF1ACA;
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF1ACA;
+    transition: .3s;
+}
+
+
+/*booking_knap = i single view*/
+#booking_knap {
+    background-color: #2f2f2f;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 8px;
+}
+
+#booking_knap:hover {
+    background-color: white;
+    color: #2f2f2f;
+    border: 1px solid #2f2f2f;
+    transition: .3s;
+}
+
+
+/*book_knap = i sektion med booking på forside*/
+#book_knap {
+    background-color: white;
+    color: #2f2f2f;
+    border: 1px solid #2f2f2f;
+}
+
+#book_knap:hover {
+    background-color: #2f2f2f;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+#se_mere {
+    border: 1px solid #2f2f2f;
+}

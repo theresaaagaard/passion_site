@@ -14,7 +14,7 @@
 
  function start() {
 
- loadJSON();
+     loadJSON();
  }
 
 
@@ -45,7 +45,7 @@
              klon.querySelector(".navn").textContent += queen.navn;
 
 
-             klon.querySelector("#se-mere").addEventListener("click", () => visDetaljer(queen)); //laver eventlistener på ret, der fører én til en funktion, hvor man kan se detaljer om den valgte ret
+             klon.querySelector("#se_mere").addEventListener("click", () => visDetaljer(queen)); //laver eventlistener på ret, der fører én til en funktion, hvor man kan se detaljer om den valgte ret
 
              dest.appendChild(klon);
 
