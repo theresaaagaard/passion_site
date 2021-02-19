@@ -7,23 +7,14 @@ img {
 }
 body {
     font-family: sans-serif;
-<<<<<<< HEAD
-/*    background-color: white;*/
-/*    margin: 0;*/
-
+    /*    background-color: white;*/
+    /*    margin: 0;*/
 }
-
 main {
-
     background-color: white;
     margin: 0;
     margin-bottom: 180px;
 }
-
-
-=======
-}
->>>>>>> Christine
 h2 {
     font-size: 1.5rem;
 }
@@ -42,52 +33,6 @@ p {
 
 /*------STYLE AF NAV------*/
 
-<<<<<<< HEAD
-/*--------------footer----------------*/
-
-.footer {
-
-    background-color: #2f2f2f;
-
-    position: fixed;
-    z-index: -1;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    /*    text-align: left;*/
-    display: flex;
-    flex-direction: column;
-
-}
-
-.footer h2 {
-
-    text-align: center;
-    color: white;
-}
-
-.footer h2:hover {
-
-    color: #FF1ACA;
-}
-
-.footer a {
-
-    text-align: left;
-    margin-left: 2rem;
-    color: white;
-    line-height: 1.6;
-    /*    display: inline-block;*/
-
-
-}
-
-.footer a:hover {
-    color: #FF1ACA;
-}
-
-
-=======
 nav {
     z-index: 1;
     width: 100%;
@@ -150,39 +95,36 @@ nav a {
     background-color: #454545;
 }
 
-/*------animationer-------*/
+/*--------------footer----------------*/
 
-.openmenu {
-    animation-name: slide_kf;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;
-    animation-timing-function: cubic-bezier(0.77, 0.2, 0.05, 1.0);
+.footer {
+    background-color: #2f2f2f;
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /*    text-align: left;*/
+    display: flex;
+    flex-direction: column;
 }
-@keyframes slide_kf {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
+.footer h2 {
+    text-align: center;
+    color: white;
 }
-.closemenu {
-    animation-name: slideout_kf;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;
-    animation-timing-function: cubic-bezier(0.77, 0.2, 0.05, 1.0);
+.footer h2:hover {
+    color: #FF1ACA;
 }
-@keyframes slideout_kf {
-    100% {
-        transform-origin: 0% 0%;
-        transform: translateX(100%);
-    }
-    0% {
-        transform-origin: 0% 0%;
-        transform: translateX(0%);
-    }
+.footer a {
+    text-align: left;
+    margin-left: 2rem;
+    color: white;
+    line-height: 1.6;
+    /*    display: inline-block;*/
 }
->>>>>>> Christine
+.footer a:hover {
+    color: #FF1ACA;
+}
 
 /*LINKS*/
 
@@ -238,82 +180,97 @@ a:hover {
     border: 1px solid #2f2f2f;
 }
 
-
 /*Galleri*/
+
 div.image-container figure {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-auto-rows: 1fr;
     gap: 10px;
 }
-
 .pic1 {
     grid-column: 1/2;
 }
-
 .pic2 {
     grid-column: 2/3;
 }
-
 .pic3 {
     grid-column: 3/4;
 }
-
 .pic4 {
     grid-column: 4/5;
 }
-
 .pic5 {
     grid-column: 5/6;
 }
-
 .pic6 {
     grid-column: 1/2;
     grid-row: 2/3;
 }
-
 .pic7 {
     grid-column: 2/3;
     grid-row: 2/3;
 }
-
 .pic8 {
     grid-column: 3/4;
     grid-row: 2/3;
 }
-
 .pic9 {
     grid-column: 4/5;
     grid-row: 2/3;
 }
-
 .pic10 {
     grid-column: 5/6;
     grid-row: 2/3;
 }
-
-
-
 @media (max-width: 650px) {
     div.image-container figure {
         display: flex;
         gap: 10px;
     }
-
     .image-container {
         overflow-x: scroll;
         padding: 20px;
     }
-
     .image-container figure {
         flex-basis: 90%;
         flex-shrink: 0;
         flex-grow: 1;
     }
-
     .image-container img {
         margin-right: 20px;
     }
+}
 
+/*------animationer-------*/
 
+.openmenu {
+    animation-name: slide_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+@keyframes slide_kf {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+.closemenu {
+    animation-name: slideout_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+@keyframes slideout_kf {
+    100% {
+        transform-origin: 0% 0%;
+        transform: translateX(100%);
+    }
+    0% {
+        transform-origin: 0% 0%;
+        transform: translateX(0%);
+    }
 }
