@@ -2,7 +2,7 @@
         const id = urlParams.get("id");
 
         const medieurl = "https://dragqueens-8f96.restdb.io/media/";
-        let person;
+        let queen;
         const myHeaders = {
             "x-apikey": "602e81e35ad3610fb5bb6352"
         }
@@ -21,14 +21,14 @@
         }
 
         function visQueen() {
-            document.querySelector(".navn").textcontent += queen.navn;
+            document.querySelector(".navn").textContent += queen.navn;
             document.querySelector("#main_billede").src = medieurl + queen.billede[0];
 
-            document.querySelector(".talent").textcontent = queen.talent;
-            document.querySelector(".placering").textcontent = queen.placering;
-            document.querySelector(".varighed").textcontent = queen.varighed;
+            document.querySelector(".talent").textContent = queen.talent;
+            document.querySelector(".placering").textContent = queen.placering;
+            document.querySelector(".varighed").textContent = queen.varighed;
 
-            document.querySelector("____").addEventListener("click", tilbageTilOversigt);
+            document.querySelector("#tilbage").addEventListener("click", tilbageTilOversigt);
         }
 
         function tilbageTilOversigt() {
