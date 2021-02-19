@@ -51,30 +51,66 @@
                             <input placeholder="fx Tilde Jensen" name="navn" type="text" required>
                         </label>
                     </div>
+
                     <div>
-                        <label for="mail">
+                        <label for="e-mail">
                             <p class="overskrift">E-mail</p>
-                            <input placeholder="fx tilde@jensen.dk" name="e-mail" type="text" required>
+                            <input placeholder="fx tilde@jensen.dk" name="e-mail" type="email" required>
                         </label>
                     </div>
+
                     <div>
-                        <label for="mail">
-                            <p class="overskrift">E-mail</p>
-                            <input placeholder="fx tilde@jensen.dk" name="e-mail" type="text" required>
+                        <label for="tlf">
+                            <p class="overskrift">Telefon</p>
+                            <input placeholder="12 34 56 78" name="tlf" type="tel" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" required>
                         </label>
                     </div>
+
+
+
+
                     <div>
-                        <label for="mail">
-                            <p class="overskrift">E-mail</p>
-                            <input placeholder="fx tilde@jensen.dk" name="e-mail" type="text" required>
+
+                        <label for="queens">
+                            <p>Vælg drag queen</p>
+                            <select id="queens" name="queens">
+                                <option value="queen1">Drag queen 1</option>
+                                <option value="queen2">Drag queen 2</option>
+                                <option value="queen3">Drag queen 3</option>
+                                <option value="queen4">Drag queen 4</option>
+                                <option value="queen5">Drag queen 5</option>
+                                <option value="queen6">Drag queen 6</option>
+                                <option value="queen7">Drag queen 7</option>
+                                <option value="queen8">Drag queen 8</option>
+                                <option value="queen9">Drag queen 9</option>
+                                <option value="queen10">Drag queen 10</option>
+                            </select>
                         </label>
                     </div>
-                    <div>
-                        <label for="mail">
-                            <p class="overskrift">E-mail</p>
-                            <input placeholder="fx tilde@jensen.dk" name="e-mail" type="text" required>
+
+
+
+
+                    <div><label for="dato">
+                            <p class="dato">Vælg dato</p>
+                            <input type="date" id="dato" name="dato" value="2018-07-22" min="2018-01-01" max="2018-12-31">
                         </label>
                     </div>
+
+                    <div>
+                        <label for="emne">
+                            <p class="overskrift">Emne</p>
+                            <input placeholder="Beskedemne" name="emne" type="text" required>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label for="besked">
+                            <p class="overskrift">Besked</p>
+                            <textarea placeholder="Skriv din besked her..." rows="5" cols="30" name="besked" required></textarea>
+                        </label>
+                    </div>
+
                     <button id="book_knap">Book</button>
                 </form>
             </div>
