@@ -1,0 +1,22 @@
+@media (min-width: 650px) {
+    nav {
+        background-color: white;
+        height: 60px;
+    }
+    #menuknap {
+        display: none;
+    }
+    #navbar {
+        display: contents;
+    }
+    #link_box {
+        display: flex;
+        flex-direction: row;
+        grid-gap: 20px;
+        margin-right: 30px;
+        margin-top: 20px;
+    }
+    #link_box a {
+        font-size: 1.1rem;
+    }
+}
