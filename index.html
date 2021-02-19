@@ -49,81 +49,51 @@
 
         </section>
 
+
+
         <section id="booking">
-            <div>
-                <h2>Book en drag queen:</h2>
-                <p>Udfyld formularen og book din favorit queen i dag.</p>
+            <div id="booking_tekst">
+                <h2>Book en drag queen</h2>
+                <p>Udfyld formularen og book din favorit queen i dag</p>
             </div>
+
             <div>
-                <form action="">
-                    <div>
-                        <label for="navn">
-                            <p class="overskrift">Fornavn og efternavn</p>
-                            <input placeholder="fx Tilde Jensen" name="navn" type="text" required>
-                        </label>
-                    </div>
+                <form name="booking_form" action="lavevttakfordinbeskedhtmlside">
 
-                    <div>
-                        <label for="e-mail">
-                            <p class="overskrift">E-mail</p>
-                            <input placeholder="fx tilde@jensen.dk" name="e-mail" type="email" required>
-                        </label>
-                    </div>
+                    <label for="navn">Fornavn og efternavn</label>
+                    <input id="navn" placeholder="fx Miss Drag To Go" name="navn" type="text" required>
 
-                    <div>
-                        <label for="tlf">
-                            <p class="overskrift">Telefon</p>
-                            <input placeholder="12 34 56 78" name="tlf" type="tel" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" required>
-                        </label>
-                    </div>
+                    <label for="e-mail">E-mail</label>
+                    <input id="e-mail" placeholder="fx drag@togo.dk" name="e-mail" type="email" required>
 
+                    <label for="tlf">Telefon</label>
+                    <input id="tlf" placeholder="fx 10203040" name="tlf" type="tel" pattern="[0-9]{8}" required>
 
+                    <label for="queens">Vælg drag queen</label>
+                    <select id="queens" name="queens">
+                        <option value="queen1">Drag queen 1</option>
+                        <option value="queen2">Drag queen 2</option>
+                        <option value="queen3">Drag queen 3</option>
+                        <option value="queen4">Drag queen 4</option>
+                        <option value="queen5">Drag queen 5</option>
+                        <option value="queen6">Drag queen 6</option>
+                        <option value="queen7">Drag queen 7</option>
+                        <option value="queen8">Drag queen 8</option>
+                        <option value="queen9">Drag queen 9</option>
+                        <option value="queen10">Drag queen 10</option>
+                    </select>
 
+                    <label for="dato">Vælg dato</label>
+                    <input id="dato" type="date" name="dato" value="2021-01-01" min="2021-01-01" max="2025-12-31">
 
-                    <div>
+                    <!--
+                        <label for="emne">Emne</label>
+                        <input id="emne" placeholder="Beskedemne" name="emne" type="text" required>
+-->
+                    <label for="besked">Besked</label>
+                    <textarea id="besked" placeholder="Skriv din besked her..." rows="6" name="besked" required></textarea>
 
-                        <label for="queens">
-                            <p>Vælg drag queen</p>
-                            <select id="queens" name="queens">
-                                <option value="queen1">Drag queen 1</option>
-                                <option value="queen2">Drag queen 2</option>
-                                <option value="queen3">Drag queen 3</option>
-                                <option value="queen4">Drag queen 4</option>
-                                <option value="queen5">Drag queen 5</option>
-                                <option value="queen6">Drag queen 6</option>
-                                <option value="queen7">Drag queen 7</option>
-                                <option value="queen8">Drag queen 8</option>
-                                <option value="queen9">Drag queen 9</option>
-                                <option value="queen10">Drag queen 10</option>
-                            </select>
-                        </label>
-                    </div>
-
-
-
-
-                    <div>
-                        <label for="dato">
-                            <p class="dato">Vælg dato</p>
-                            <input type="date" id="dato" name="dato" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-                        </label>
-                    </div>
-
-                    <div>
-                        <label for="emne">
-                            <p class="overskrift">Emne</p>
-                            <input placeholder="Beskedemne" name="emne" type="text" required>
-                        </label>
-                    </div>
-
-                    <div>
-                        <label for="besked">
-                            <p class="overskrift">Besked</p>
-                            <textarea placeholder="Skriv din besked her..." rows="5" cols="30" name="besked" required></textarea>
-                        </label>
-                    </div>
-
-                    <button id="book_knap">Book</button>
+                    <div id="book_knap"><button id="book_knap">Book</button></div>
 
                 </form>
             </div>
