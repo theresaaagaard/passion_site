@@ -22,7 +22,7 @@
 
         function visQueen() {
             document.querySelector(".navn").textcontent += queen.navn;
-//            document.querySelector("#main-billede").src = medieurl + queen.billede[0];
+            document.querySelector("#main_billede").src = medieurl + queen.billede[0];
 
             document.querySelector(".talent").textcontent = queen.talent;
             document.querySelector(".placering").textcontent = queen.placering;
