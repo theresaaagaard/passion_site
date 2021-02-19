@@ -1,46 +1,125 @@
 * {
-    margin: 0 padding: 0;
-
+    margin: 0;
+    padding: 0;
 }
-
 img {
     width: 100%;
 }
-
-
-
-
-
-
-
 body {
     font-family: sans-serif;
-
 }
-
-
 h2 {
     font-size: 1.5rem;
 }
-
 h3 {
     font-size: 1rem;
     font-weight: 400;
 }
-
 h4 {
     font-size: 0.9rem;
     ;
     font-weight: 600;
 }
-
 p {
     font-size: 0.9rem;
 }
 
+/*------STYLE AF NAV------*/
 
+nav {
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 30px;
+    font-size: 1.5rem;
+}
+#menuknap {
+    margin-right: 20px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 2;
+}
+#link_box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+}
+#navbar {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+}
+.bar1,
+.bar2,
+.bar3 {
+    width: 32px;
+    height: 4px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+.hidden {
+    display: none;
+    transform: scale(0);
+}
+.change .bar1 {
+    transform: rotate(-45deg) translate(-8px, 5px);
+    transform: rotate(-45deg) translate(-8px, 5px);
+    background-color: #454545;
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -7px);
+    transform: rotate(45deg) translate(-8px, -7px);
+    background-color: #454545;
+}
 
+/*------animationer-------*/
 
+.openmenu {
+    animation-name: slide_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+@keyframes slide_kf {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+.closemenu {
+    animation-name: slideout_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+@keyframes slideout_kf {
+    100% {
+        transform-origin: 0% 0%;
+        transform: translateX(100%);
+    }
+    0% {
+        transform-origin: 0% 0%;
+        transform: translateX(0%);
+    }
+}
 
 /*LINKS*/
 
@@ -50,32 +129,27 @@ button {
     padding: 5px 20px;
     background-color: white;
 }
-
 button:hover {
     background-color: none;
     color: #FF1ACA;
 }
-
-
 a {
     color: black;
     text-decoration: none;
 }
-
 a:hover {
     color: #FF1ACA;
     transition: .3s;
 }
 
-
 /*booking_knap = i single view*/
+
 #booking_knap {
     background-color: #2f2f2f;
     color: white;
     padding: 5px 20px;
     border-radius: 8px;
 }
-
 #booking_knap:hover {
     background-color: white;
     color: #2f2f2f;
@@ -83,14 +157,13 @@ a:hover {
     transition: .3s;
 }
 
-
 /*book_knap = i sektion med booking på forside*/
+
 #book_knap {
     background-color: white;
     color: #2f2f2f;
     border: 1px solid #2f2f2f;
 }
-
 #book_knap:hover {
     background-color: #2f2f2f;
     color: white;
@@ -98,7 +171,6 @@ a:hover {
     border-radius: 8px;
     transition: .3s;
 }
-
 #se_mere {
     border: 1px solid #2f2f2f;
 }
