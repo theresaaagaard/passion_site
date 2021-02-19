@@ -13,6 +13,10 @@
     padding-bottom: 10px;
 }
 
+#form_container {
+    justify-content: center;
+}
+
 label {
     display: block;
     padding: 20px 5px 6px;
@@ -43,6 +47,7 @@ select {
     width: 222px;
 }
 
+
 #book_knap {
     background-color: white;
     color: #2f2f2f;
@@ -57,14 +62,19 @@ select {
     transition: .3s;
 }
 
+#book_knap_container {
+    text-align: center;
+    margin-top: 15px;
+}
 
 
 
-@media (min-width: 400px) {
+
+@media (min-width: 650px) {
 
     #booking {
         display: grid;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 45% 55%;
 
         background-color: #F7F4F4;
         padding: 50px;
@@ -80,6 +90,10 @@ select {
     }
 
     #booking_tekst {
+        place-self: center end;
+    }
+
+    #form_container {
         place-self: center center;
     }
 
@@ -97,5 +111,4 @@ select {
     select {
         width: 322px;
     }
-
 }
