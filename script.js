@@ -68,22 +68,22 @@
      document.querySelector("#menuknap").classList.toggle("change");
      document.querySelector("#navbar").classList.toggle("hidden");
 
-     // const links = document.querySelectorAll(".link");
-     // links.forEach(link => link.addEventListener("click", clickLink));
+     const links = document.querySelectorAll(".link");
+     links.forEach(link => link.addEventListener("click", clickLink));
 
-     /*     function clickLink() {
+     function clickLink() {
 
-              if (menuIsOpen == true) {
-                  document.querySelector(".link").removeEventListener("click", clickLink);
-                  document.querySelector("#navbar").classList.add("hidden");
+         if (menuIsOpen == true) {
+             document.querySelector(".link").removeEventListener("click", clickLink);
+             document.querySelector("#navbar").classList.add("hidden");
 
-                  document.querySelector("#navbar").classList.remove("openmenu");
-                  document.querySelector("#navbar").classList.add("closemenu");
+             document.querySelector("#navbar").classList.remove("openmenu");
+             document.querySelector("#navbar").classList.add("closemenu");
 
-                  document.querySelector("#menuknap").classList.toggle("change");
-                  menuIsOpen = false;
-              }
-          }*/
+             document.querySelector("#menuknap").classList.toggle("change");
+             menuIsOpen = false;
+         }
+     }
 
      // Undersøg om menuen er åben eller lukket
      if (menuIsOpen == true) {
