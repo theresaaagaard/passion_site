@@ -186,8 +186,12 @@ a:hover {
 #booking_knap {
     background-color: #2f2f2f;
     color: white;
-    padding: 5px 20px;
-    border-radius: 8px;
+    padding: 10px 25px;
+    border-radius: 20px;
+
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: .8rem;
 }
 
 #booking_knap:hover {
