@@ -57,7 +57,7 @@
                 <p>Udfyld formularen og book din favorit queen i dag</p>
             </div>
 
-            <div>
+            <div id="form_container">
                 <form name="booking_form" action="lavevttakfordinbeskedhtmlside">
 
                     <label for="navn">Fornavn og efternavn</label>
@@ -93,7 +93,9 @@
                     <label for="besked">Besked</label>
                     <textarea id="besked" placeholder="Skriv din besked her..." rows="6" name="besked" required></textarea>
 
-                    <div id="book_knap"><button id="book_knap">Book</button></div>
+                    <div id="book_knap_container">
+                        <button id="book_knap">Book</button>
+                    </div>
 
                 </form>
             </div>
@@ -118,7 +120,7 @@
 
         <template>
             <article>
-                <p class="navn"></p>
+                <p class="navn">Miss </p>
                 <img class="billede" src="" alt="">
                 <button id="se_mere">Se mere</button>
             </article>
