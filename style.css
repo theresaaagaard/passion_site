@@ -92,10 +92,6 @@ nav a {
     border-radius: 5px;
 }
 
-.hidden {
-    display: none;
-    transform: scale(0);
-}
 
 .change .bar1 {
     transform: rotate(-45deg) translate(-8px, 5px);
@@ -117,14 +113,19 @@ nav a {
 
 
 /*--------------sortér knap----------------*/
-#kategorier {
+.kategorier {
     display: flex;
     flex-direction: column;
 }
 
-#kategorier button {
+.kategorier button {
     letter-spacing: .2rem;
     padding: 20px;
+}
+
+
+.hidden {
+    display: none;
 }
 
 #liste {}
@@ -426,7 +427,7 @@ article img {
     }
 */
 
-    #kategorier {
+    .kategorier {
         display: flex;
         flex-direction: column;
 

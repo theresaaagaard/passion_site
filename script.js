@@ -84,9 +84,10 @@
 
  document.querySelector(".sorter").addEventListener("click", sorterMenu);
 
+
  function sorterMenu() {
      console.log("sorterMenu");
-     document.querySelector("#kategorier").classList.toggle("hidden");
+     document.querySelector(".kategorier").classList.toggle("hidden");
  }
 
 
