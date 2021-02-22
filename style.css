@@ -149,46 +149,12 @@ nav a {
     margin-top: 30px;
 }
 
-
-
-
-
-
-/*--------------footer----------------*/
-
-.footer {
-    background-color: #2f2f2f;
-    position: fixed;
-    z-index: -1;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    /*    text-align: left;*/
-    display: flex;
-    flex-direction: column;
-    padding-top: 200px;
+.valgt {
+    color: #ff1aca;
 }
 
-.footer h2 {
-    text-align: center;
-    color: white;
-}
 
-.footer h2:hover {
-    color: #FF1ACA;
-}
 
-.footer a {
-    text-align: left;
-    margin-left: 2rem;
-    color: white;
-    line-height: 1.6;
-    /*    display: inline-block;*/
-}
-
-.footer a:hover {
-    color: #FF1ACA;
-}
 
 /*LINKS*/
 
@@ -493,7 +459,6 @@ input {
     margin-top: 30px;
     text-align: justify;
 }
-
 
 
 }
