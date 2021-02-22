@@ -44,8 +44,8 @@
          if (filter == queen.kategori || filter == "alle") {
              // loop igennem json
              const klon = skabelon.cloneNode(true);
-             klon.querySelector("img").src = medieurl + queen.billede[0];
              klon.querySelector(".navn").textContent += queen.navn;
+             klon.querySelector("img").src = medieurl + queen.billede[0];
 
 
              klon.querySelector("#se_mere").addEventListener("click", () => visDetaljer(queen)); //laver eventlistener på ret, der fører én til en funktion, hvor man kan se detaljer om den valgte ret
