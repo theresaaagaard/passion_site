@@ -40,12 +40,14 @@
         </section>
 
         <section id="liste">
-            <h3 class="sorter"></h3>
-            <div id="kategorier" class="hidden">
-                <button data-kategori="sang">Sang: </button>
-                <button data-kategori="dans">Dans: </button>
-                <button data-kategori="komik">Komik: </button>
-                <button data-kategori="makeup">Makeup: </button>
+            <div id="sorter_section">
+                <h3 class="sorter">Sortér:</h3>
+                <div id="kategorier">
+                    <button data-kategori="sang">SANG</button>
+                    <button data-kategori="dans">DANS</button>
+                    <button data-kategori="komik">KOMIK</button>
+                    <button data-kategori="makeup">MAKEUP</button>
+                </div>
             </div>
 
             <div id="oversigt"></div>
@@ -124,9 +126,10 @@
 
         <template>
             <article>
-                <p class="navn">Miss </p>
+
                 <img class="billede" src="" alt="">
                 <button id="se_mere">Se mere</button>
+                <p class="navn">Miss </p>
             </article>
         </template>
 
