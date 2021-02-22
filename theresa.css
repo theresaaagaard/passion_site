@@ -1,22 +1,31 @@
-/*galleri i single view*/
-
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
+/*-----galleri i single view-----*/
 
 
 #detail {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 1fr;
     gap: 10px;
     grid-auto-flow: dense;
     padding: 30px;
 }
 
+#col1 {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#col2 {
+    padding: 20px;
+    line-height: 1.5;
+}
+
+#col3 {
+    padding: 20px;
+    line-height: 2.3;
+}
 
 #main_billede {
     grid-column: 1/4;
@@ -41,17 +50,4 @@
 #ekstra_billede4 {
     grid-column: 2/3;
     grid-row: 4/5;
-}
-
-h2.navn {
-    grid-column: 4/6;
-    grid-row: 1/4;
-    padding: 20px;
-}
-
-#text_wrapper {
-    grid-column: 6/8;
-    grid-row: 1/4;
-    padding: 20px;
-    line-height: 2.3;
 }
