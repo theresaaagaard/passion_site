@@ -15,6 +15,23 @@
 
 
  function start() {
+
+     function myFunction(mediaquery) {
+         if (mediaquery.matches) { // If media query matches
+             document.querySelector("#kategorier").classList.add("hidden");
+         } else {
+             document.querySelector("#kategorier").classList.remove("hidden");
+         }
+     }
+
+     let mediaquery = window.matchMedia("(max-width: 650px)")
+     myFunction(mediaquery) // Call listener function at run time
+     mediaquery.addListener(myFunction) // Attach listener function on state changes
+
+
+
+
+
      document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 
      loadJSON();
