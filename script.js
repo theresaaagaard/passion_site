@@ -13,7 +13,6 @@
  let queens;
  let filter = "alle";
 
-
  function start() {
 
      function myFunction(mediaquery) {
@@ -28,14 +27,27 @@
      myFunction(mediaquery) // Call listener function at run time
      mediaquery.addListener(myFunction) // Attach listener function on state changes
 
-
-
-
-
      document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+
+
+     const filterKnapper = document.querySelectorAll(".kategorier button");
+     filterKnapper.forEach(knap => knap.addEventListener("click", filtrerKategorier));
+
 
      loadJSON();
  }
+
+ function filtrerKategorier() {
+     filter = this.dataset.kategori;
+     console.log("filtrerKategorier");
+
+     document.querySelector(".valgt").classList.remove("valgt");
+     this.classList.add("valgt");
+
+     visQueens();
+     //     header.textContent = this.textContent;
+ }
+
 
 
 
