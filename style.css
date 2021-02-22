@@ -195,6 +195,7 @@ button {
     border-radius: 8px;
     padding: 5px 20px;
     background-color: white;
+    font-weight: 100;
 }
 
 button:hover {
@@ -234,6 +235,8 @@ a:hover {
     background-color: white;
     color: #2f2f2f;
     border: 1px solid #2f2f2f;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
 }
 
 #book_knap:hover {
@@ -351,6 +354,10 @@ article img {
     margin-top: 90px;
 }
 
+input {
+    text-transform: uppercase;
+}
+
 
 
 
@@ -427,11 +434,46 @@ article img {
     }
 */
 
+    #sorter_section {
+        margin-top: 60px;
+        position: sticky;
+        top: 10vh;
+        align-self: flex-start
+    }
+
     .kategorier {
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
+    }
 
 
+    .kategorier button {
+        letter-spacing: .2rem;
+        padding-top: 10px;
+        text-align: justify;
+        margin-left: 60px;
+        font-weight: 100;
+        color: #575757;
+    }
+
+    #liste {
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+
+    .sorter {
+        border: none;
+        width: 45%;
+
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        font-size: 1rem;
+        font-weight: 400;
+
+        margin-left: 60px;
+        margin-top: 30px;
+        text-align: justify;
     }
 
 }
