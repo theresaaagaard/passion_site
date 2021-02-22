@@ -78,6 +78,25 @@
  }
 
 
+
+
+ // toggle på sortér-knappen
+
+ document.querySelector(".sorter").addEventListener("click", sorterMenu);
+
+ function sorterMenu() {
+     console.log("sorterMenu");
+     document.querySelector("#kategorier").classList.toggle("hidden");
+ }
+
+
+
+
+
+
+
+
+
  //------------------BURGER MENU-------------------
  function toggleMenu() {
      console.log("toggleMenu");
