@@ -128,7 +128,9 @@ nav a {
     display: none;
 }
 
-#liste {}
+#liste {
+    margin-bottom: 40px;
+}
 
 .sorter {
     border-radius: 25px;
@@ -460,20 +462,23 @@ input {
     #liste {
         display: grid;
         grid-template-columns: 20% 80%;
+        margin-bottom: 45px;
     }
 
-    .sorter {
-        border: none;
-        width: 45%;
+}
 
-        text-transform: uppercase;
-        letter-spacing: .2rem;
-        font-size: 1rem;
-        font-weight: 400;
+.sorter {
+    border: none;
+    width: 45%;
 
-        margin-left: 60px;
-        margin-top: 30px;
-        text-align: justify;
-    }
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 1rem;
+    font-weight: 400;
+
+    margin-left: 60px;
+    margin-top: 30px;
+    text-align: justify;
+}
 
 }
