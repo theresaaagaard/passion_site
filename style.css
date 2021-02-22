@@ -46,13 +46,18 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    height: 60px;
+    background-color: white;
 }
 
 nav a {
     text-decoration: none;
     color: black;
-    padding-bottom: 30px;
+    padding-bottom: 80px;
     font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 100;
 }
 
 #menuknap {
@@ -107,6 +112,44 @@ nav a {
     transform: rotate(45deg) translate(-8px, -7px);
     background-color: #454545;
 }
+
+
+
+
+/*--------------sortér knap----------------*/
+#kategorier {
+    display: flex;
+    flex-direction: column;
+}
+
+#kategorier button {
+    letter-spacing: .2rem;
+    padding: 20px;
+}
+
+#liste {}
+
+.sorter {
+    border-radius: 25px;
+    border: 1px solid black;
+    background-color: white;
+    padding: 15px 20px;
+    width: 45%;
+
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .2rem;
+    font-size: 1rem;
+    font-weight: 100;
+
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+
+
+
 
 /*--------------footer----------------*/
 
@@ -200,9 +243,6 @@ a:hover {
     transition: .3s;
 }
 
-#se_mere {
-    border: 1px solid #2f2f2f;
-}
 
 /*Galleri*/
 
@@ -259,6 +299,61 @@ div.image-container figure {
 }
 
 
+
+
+/*------loop view forside------*/
+
+#oversigt {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+article {
+    display: grid;
+}
+
+#se_mere,
+article img,
+article p {
+    grid-area: 1/1;
+}
+
+#se_mere {
+    place-self: end center;
+    margin-bottom: 30px;
+
+    background-color: rgb(255, 255, 255, .8);
+    color: #2f2f2f;
+    /*    border: 1px solid #555555;*/
+    padding: 8px 40px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    /*    opacity: 80%;*/
+    /*    z-index:-1;*/
+}
+
+article p {
+    text-align: center;
+    padding-top: 55px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    /*    color:white;*/
+    /*    text-shadow:2px 2px white;*/
+}
+
+article img {
+    width: 85%;
+    place-self: center;
+    margin-top: 90px;
+}
+
+
+
+
+
 /*------animationer-------*/
 
 .openmenu {
@@ -297,6 +392,9 @@ div.image-container figure {
     }
 }
 
+
+
+
 @media (max-width: 650px) {
     div.image-container figure {
         display: flex;
@@ -317,4 +415,22 @@ div.image-container figure {
     .image-container img {
         margin-right: 20px;
     }
+}
+
+
+@media (min-width: 650px) {
+
+    /*
+    article img {
+        width: %;
+    }
+*/
+
+    #kategorier {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
 }
