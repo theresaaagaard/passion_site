@@ -18,9 +18,9 @@
 
      function myFunction(mediaquery) {
          if (mediaquery.matches) { // If media query matches
-             document.querySelector("#kategorier").classList.add("hidden");
+             document.querySelector(".kategorier").classList.add("hidden");
          } else {
-             document.querySelector("#kategorier").classList.remove("hidden");
+             document.querySelector(".kategorier").classList.remove("hidden");
          }
      }
 
