@@ -23,10 +23,10 @@
         function visQueen() {
             document.querySelector(".navn").textContent += queen.navn;
             document.querySelector("#main_billede").src = medieurl + queen.billede[0];
-            document.querySelector("#ekstra_billede1").src = medieurl + queen.billede[0];
-            document.querySelector("#ekstra_billede2").src = medieurl + queen.billede[0];
-            document.querySelector("#ekstra_billede3").src = medieurl + queen.billede[0];
-            document.querySelector("#ekstra_billede4").src = medieurl + queen.billede[0];
+            document.querySelector("#ekstra_billede1").src = medieurl + queen.billede[1];
+            document.querySelector("#ekstra_billede2").src = medieurl + queen.billede[2];
+            document.querySelector("#ekstra_billede3").src = medieurl + queen.billede[3];
+            document.querySelector("#ekstra_billede4").src = medieurl + queen.billede[4];
 
             document.querySelector(".talent").textContent = queen.talent;
             document.querySelector(".placering").textContent = queen.placering;
