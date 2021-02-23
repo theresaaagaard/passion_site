@@ -7,6 +7,9 @@
             "x-apikey": "602e81e35ad3610fb5bb6352"
         }
 
+        //opretter variabel, hvor burgermenu er lukket
+        let menuIsOpen = false;
+
         console.log("ID", id);
         document.addEventListener("DOMContentLoaded", loadJSON);
 
