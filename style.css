@@ -335,7 +335,7 @@ article img {
 /*--------effekter--------*/
 
 .valgt {
-    color: #ff1aca;
+    color: #ff1aca !important;
 }
 .hidden {
     display: none;
