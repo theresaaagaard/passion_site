@@ -134,7 +134,7 @@ nav a {
 
 .sorter {
     border-radius: 25px;
-    border: 1px solid black;
+    border: 1px solid #a2a2a2;
     background-color: white;
     padding: 15px 20px;
     width: 45%;
@@ -197,7 +197,7 @@ a:hover {
 #booking_knap:hover {
     background-color: white;
     color: #2f2f2f;
-    border: 1px solid #2f2f2f;
+    border: 1px solid #9f9f9f;
     transition: .3s;
 }
 
@@ -209,14 +209,6 @@ a:hover {
     border: 1px solid #2f2f2f;
     text-transform: uppercase;
     letter-spacing: .1rem;
-}
-
-#book_knap:hover {
-    background-color: #2f2f2f;
-    color: white;
-    padding: 5px 20px;
-    border-radius: 8px;
-    transition: .3s;
 }
 
 
@@ -326,11 +318,6 @@ article img {
     margin-top: 90px;
 }
 
-input {
-    text-transform: uppercase;
-}
-
-
 
 
 
@@ -405,6 +392,9 @@ input {
         width: %;
     }
 */
+    #oversigt {
+        margin-right: 50px;
+    }
 
     #se_mere:hover {
         background-color: #2f2f2f;
@@ -448,21 +438,19 @@ input {
         margin-bottom: 45px;
     }
 
-}
+    .sorter {
+        border: none;
+        width: 45%;
 
-.sorter {
-    border: none;
-    width: 45%;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        font-size: 1rem;
+        font-weight: 400;
 
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    font-size: 1rem;
-    font-weight: 400;
-
-    margin-left: 60px;
-    margin-top: 30px;
-    text-align: justify;
-}
+        margin-left: 60px;
+        margin-top: 30px;
+        text-align: justify;
+    }
 
 
 }
