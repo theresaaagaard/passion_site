@@ -290,10 +290,18 @@ article p {
 }
 
 article img {
-    width: 85%;
     place-self: center;
     margin-top: 90px;
+
+    width: 425px;
+    height: 500px;
+    object-fit: cover;
 }
+
+
+
+
+
 
 @media (max-width: 650px) {
     div.image-container figure {
@@ -317,16 +325,20 @@ article img {
     }
 }
 
+
+
 @media (min-width: 650px) {
 
-    /*
-    article img {
-        width: %;
-    }
-*/
+
     #oversigt {
         margin-right: 50px;
     }
+
+    article img {
+        width: 500px;
+        height: 650px;
+    }
+
 
     #se_mere:hover {
         background-color: #2f2f2f;
@@ -382,12 +394,18 @@ article img {
         margin-top: 30px;
         text-align: justify;
     }
+
+    #book_knap {
+        cursor: pointer;
+    }
+
 }
 
 
-#book_knap {
-    cursor: pointer;
-}
+
+
+
+
 
 /*--------effekter--------*/
 
