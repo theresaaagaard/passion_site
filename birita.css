@@ -109,5 +109,6 @@ select {
         border-radius: 15px;
         color: white;
         transition: .3s;
+        cursor: pointer;
     }
 }
