@@ -70,7 +70,7 @@
 
      queens.forEach(queen => {
 
-         if (filter == queen.kategori || filter == "alle") {
+         if (filter == queen.talent || filter == "alle") {
              // loop igennem json
              const klon = skabelon.cloneNode(true);
              klon.querySelector(".navn").textContent += queen.navn;
