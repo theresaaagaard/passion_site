@@ -39,3 +39,57 @@
         function tilbageTilOversigt() {
             history.back();
         }
+
+        //------------------BURGER MENU-------------------
+        function toggleMenu() {
+            console.log("toggleMenu");
+
+            //toggler burgermenuens udseende
+            document.querySelector("#menuknap").classList.toggle("change");
+            //toggler hidden på navbar
+            document.querySelector("#navbar").classList.toggle("hidden");
+
+            //opretter variabel som lytter til ethvert klik på links i navbaren og kalder clickLink funktion
+            const links = document.querySelectorAll(".link");
+            links.forEach(link => link.addEventListener("click", clickLink));
+
+
+            function clickLink() {
+                //undersøger om menuen er åben
+                if (menuIsOpen == true) {
+                    //luk navbaren ved click på et link inde i navbaren
+                    document.querySelector(".link").removeEventListener("click", clickLink);
+                    document.querySelector("#navbar").classList.add("hidden");
+
+                    //tilføjer closemenu animation
+                    document.querySelector("#navbar").classList.remove("openmenu");
+                    document.querySelector("#navbar").classList.add("closemenu");
+
+                    //ændrer burgermenu tilbage til "lukket" tilstand
+                    document.querySelector("#menuknap").classList.toggle("change");
+
+                    //menuen er åben så ændrer variabelen til lukket
+                    menuIsOpen = false;
+                }
+            }
+
+            // Undersøg om menuen er åben eller lukket
+            if (menuIsOpen == true) {
+
+                // Menuen er åben, så vi lukker den med css
+                document.querySelector("#navbar").classList.remove("openmenu");
+                document.querySelector("#navbar").classList.add("closemenu");
+
+                // menuen er nu lukket, så ændrer menuvariablen til at vise dette
+                menuIsOpen = false;
+            } else {
+
+                // menuen er lukket, så vi åbner den
+                document.querySelector("#navbar").classList.remove("closemenu");
+                document.querySelector("#navbar").classList.add("openmenu");
+
+                // Menuen er nu åben, så vi ændrer menuvariablen til at visse dette
+                menuIsOpen = true;
+            }
+            console.log(menuIsOpen);
+        }
