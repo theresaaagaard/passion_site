@@ -3,51 +3,33 @@
 #splash {
     display: grid;
 }
-
 #splash img,
 h1 {
     grid-area: 1/1;
 }
-
 #splash h1 {
     place-self: center center;
     color: white;
     font-size: 3rem;
     margin-top: 80px;
 }
-
-
-/*
-
-h1 {
-    color: white;
-    font-size: 3.5rem;
-    text-align: center;
-    position: relative;
-    top: 450px;
-}
-*/
 #splash img {
     width: 100vw;
-    height: 92vh;
+    height: 100vh;
     object-fit: cover;
     object-position: 70%;
 }
-
 @media (min-width: 650px) {
     nav {
         background-color: white;
         height: 60px;
     }
-
     #menuknap {
         display: none;
     }
-
     #navbar {
         display: contents;
     }
-
     #link_box {
         display: flex;
         flex-direction: row;
@@ -55,7 +37,6 @@ h1 {
         margin-right: 30px;
         margin-top: 20px;
     }
-
     #link_box a {
         font-size: 1.1rem;
     }

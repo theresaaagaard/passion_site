@@ -1,10 +1,19 @@
+#logo {
+    width: 50px;
+    height: 46px;
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    z-index: 2;
+}
+
 /*--------------footer----------------*/
 
 body {
-    padding-bottom: 50px;
+    padding-bottom: 90px;
 }
 #galleri {
-    padding-bottom: 50px;
+    padding-bottom: 10px;
 }
 .footer {
     background-color: #2f2f2f;
@@ -12,42 +21,98 @@ body {
     bottom: 0;
     width: 100vw;
     z-index: -1;
-    padding: 20px;
 }
-.footer_contact {
-    padding: 20px;
-    margin-left: 60px;
+.nyhedsbrev {
+    display: table;
+    margin: 0 auto;
 }
-.footer p {
+.nyhedsbrev p {
     color: white;
-    font-family: sans-serif;
-    margin-bottom: 10px;
-    font-weight: 100;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
     letter-spacing: 0.1rem;
 }
-.footer_contact p:first-child {
-    font-weight: 500;
-    text-transform: uppercase;
+.streg {
+    width: 340px;
+    height: 2px;
+    background-color: white;
 }
-.footer h2 {
-    text-align: center;
+.footer input {
+    background-color: #2f2f2f;
+    border: none;
+}
+.tilmeld_knap {
+    background-color: #2f2f2f;
+    border: none;
     color: white;
-    font-family: sans-serif;
-    font-weight: 300;
+    font-size: 0.8rem;
+}
+.tilmeld_knap:hover {
+    color: #ff27ff;
+}
+.mail_boks input {
+    color: white;
+    text-transform: inherit;
+    font-size: 0.9rem;
+}
+.footer_contact {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.footer_contact p {
+    font-size: 1rem;
+    padding-bottom: 5px;
+    font-weight: 100;
+}
+.footer_contact p:first-child {
+    font-weight: 600;
     text-transform: uppercase;
-    margin-top: 50px;
-    padding-top: 30px;
+    letter-spacing: 0.1rem;
 }
 .medier {
-    position: absolute;
-    right: 10vw;
-    bottom: 40px;
+    display: table;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 10px;
+}
+.ophav {
+    color: #6d6d6d;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
 }
 .medier img {
     width: 25px;
     height: 25px;
     margin-right: 20px;
 }
-.ophav {
-    text-align: center;
+@media (min-width: 650px) {
+    .footer_container {
+        max-width: 1000px;
+        margin: 0 auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 80px;
+    }
+    .nyhedsbrev {
+        padding-top: 20px;
+    }
+    .medier {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .mail_boks input {
+        width: 240px;
+    }
+    .footer_contact p {
+        letter-spacing: 0.1rem;
+        font-size: 0.9rem;
+    }
+    .footer_contact p:first-child {
+        margin-bottom: 10px;
+    }
 }
