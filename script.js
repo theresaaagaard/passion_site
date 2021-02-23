@@ -2,22 +2,25 @@
  const medieurl = "https://dragqueens-8f96.restdb.io/media/";
  const myHeaders = {
 
-         "x-apikey": "602e81e35ad3610fb5bb6352"
+     "x-apikey": "602e81e35ad3610fb5bb6352"
 
-     }
-     //opretter variabel, hvor burgermenu er lukket
+ }
+ //opretter variabel, hvor burgermenu er lukket
  let menuIsOpen = false;
+
+
+ //lytter til om DOM er loaded
+ document.addEventListener("DOMContentLoaded", start);
+ console.log("DOMContentLoaded");
+
  //opretter variabel til queens
  let queens;
  //opretter variabel til filtering
  let filter = "alle";
 
- //lytter til om DOM er loaded
- document.addEventListener("DOMContentLoaded", start);
 
  //når dom er loaded begynder start funktion
  function start() {
-     console.log("DOMContentLoaded");
 
      //toggle mellem kategori menuen er skjult eller fremme
      function myFunction(mediaquery) {
@@ -72,6 +75,8 @@
 
      const dest = document.querySelector("#oversigt");
      const skabelon = document.querySelector("template").content;
+
+     dest.textContent = "";
 
      queens.forEach(queen => {
 
