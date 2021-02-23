@@ -61,6 +61,7 @@ body {
 
 .tilmeld_knap:hover {
     color: #ff27ff;
+    cursor: pointer;
 }
 
 .mail_boks input {
