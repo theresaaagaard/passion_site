@@ -88,14 +88,14 @@
             object-fit: cover;
         }
 
-        #image_container {}
 
-        figure img {
+        #image_container figure img {
             padding: 0 0 10px;
             width: 100px;
             height: 150px;
             object-fit: cover;
         }
+
 
 
 
