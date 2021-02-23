@@ -4,20 +4,38 @@
     display: grid;
 }
 #splash img,
-h1 {
+.splash_container {
     grid-area: 1/1;
 }
-#splash h1 {
+.splash_container {
     place-self: center center;
+}
+#splash h1 {
     color: white;
     font-size: 3rem;
     margin-top: 80px;
+    text-align: center;
+}
+#splash p {
+    max-width: 600px;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 15px;
+    letter-spacing: 0.1rem;
+    font-weight: 100;
+    line-height: 25px;
 }
 #splash img {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
     object-position: 70%;
+}
+.pil {
+    position: absolute;
+    bottom: 10px;
+    left: 49%;
 }
 @media (min-width: 650px) {
     nav {
@@ -39,5 +57,20 @@ h1 {
     }
     #link_box a {
         font-size: 1.1rem;
+    }
+}
+.bounce {
+    animation-name: bounce_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+@keyframes bounce_kf {
+    100% {
+        transform: translateY(-5px);
+    }
+    0% {
+        transform: translateY(8px);
     }
 }
