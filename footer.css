@@ -18,7 +18,7 @@ body {
     padding-bottom: 10px;
 }
 
-.footer {
+#footer {
     background-color: #2f2f2f;
     position: fixed;
     bottom: 0;
@@ -47,7 +47,7 @@ body {
     background-color: white;
 }
 
-.footer input {
+#footer input {
     background-color: #2f2f2f;
     border: none;
 }
