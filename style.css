@@ -312,6 +312,9 @@ article img {
     .image-container {
         overflow-x: scroll;
         padding: 20px;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 70px;
     }
 
     .image-container figure {

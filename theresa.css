@@ -100,3 +100,48 @@
         }
 
     }
+
+    @media (max-width: 650px) {
+
+        #detail {
+            margin: 0;
+        }
+
+        #col1 {
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        #col2 {
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        #single_galleri {
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        div#image_container #single_galleri figure {
+            display: flex;
+            gap: 10px;
+        }
+
+        #image_container {
+            overflow-x: scroll;
+            padding: 20px;
+        }
+
+        #image_container figure {
+            flex-basis: 50%;
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+
+        #image_container #single_galleri figure img {
+            margin-right: 20px;
+        }
+    }
