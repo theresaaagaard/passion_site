@@ -40,6 +40,9 @@
             history.back();
         }
 
+        //lytter til klik på burgermenuen
+        document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+
         //------------------BURGER MENU-------------------
         function toggleMenu() {
             console.log("toggleMenu");
