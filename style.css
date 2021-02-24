@@ -782,7 +782,7 @@ article img {
         height: 642.2px;
 */
         width: 100%;
-        height: 100%;
+        height: 97.9%;
         object-fit: cover;
     }
 
@@ -804,7 +804,7 @@ article img {
     }
 
     #infoboks {
-        height: 70vh;
+        height: 68vh;
         padding-top: 30px;
         margin-bottom: 100px;
     }
