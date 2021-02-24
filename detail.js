@@ -35,6 +35,7 @@
             document.querySelector(".placering").textContent = queen.placering;
             document.querySelector(".varighed").textContent = queen.varighed + " timer";
             document.querySelector(".beskrivelse").textContent = queen.beskrivelse;
+            document.querySelector("#rating_billede").src = medieurl + queen.rating;
 
             document.querySelector("#tilbage").addEventListener("click", tilbageTilOversigt);
         }
