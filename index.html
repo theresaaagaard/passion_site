@@ -21,12 +21,16 @@
     <header>
         <nav>
             <a href="index.html"><img id="logo" src="img/DRAGTOGO_LOGO-02-kopi.png" alt="logo"></a>
+
+            <!--Burgermenu der vises på mobil--->
             <div id="menuknap">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
             <div id="navbar" class="hidden">
+
+                <!--Links til sektioner på siden--->
                 <div id="link_box">
                     <a class="link" href="index.html">Forside</a>
                     <a class="link" href="index.html#booking">Booking</a>
@@ -37,19 +41,24 @@
     </header>
 
     <main>
+        <!--Splashbillede--->
         <section id="splash">
             <img src="img/splashimage.jpg" alt="">
             <div class="splash_container">
                 <h1>DRAG TO GO</h1>
                 <p>Se udvalget af vores smukke drag queens og book en unik oplevelse til dit selskab, som med garanti vil opleve et brag af fest </p>
             </div>
+            <!---Pil der viser hvor man skal bevæge sig hen på sitet-->
             <p class="pil bounce">ↆ</p>
         </section>
 
+
         <section id="liste">
+
             <div id="sorter_section">
                 <h3 class="sorter">Sortér: ☰</h3>
                 <div class="kategorier hidden">
+                    <!--Filtreringsknapper med data-attributter--->
                     <button data-kategori="alle" class="valgt">ALLE</button>
                     <button data-kategori="Sang">SANG</button>
                     <button data-kategori="Dans">DANS</button>
@@ -59,11 +68,12 @@
             </div>
 
             <div id="oversigt"></div>
+            <!--tom div til alle queens--->
 
         </section>
 
 
-
+        <!--Booking boks--->
         <section id="booking">
             <div id="booking_tekst">
                 <h2>Book en drag queen</h2>
@@ -73,6 +83,7 @@
             <div id="form_container">
                 <form name="booking_form" action="lavevttakfordinbeskedhtmlside">
 
+                    <!--Rækker med placeholder tekst /microcopy--->
                     <label for="navn">Fornavn og efternavn</label>
                     <input id="navn" placeholder="FX MISS DRAG TO GO" name="navn" type="text" required>
 
@@ -97,6 +108,7 @@
                         <option value="queen10">MISS SASCHA HOLIDAY</option>
                     </select>
 
+                    <!---Kalender hvor man kan vælge dato for booking-->
                     <label for="dato">Vælg dato</label>
                     <input id="dato" type="date" name="dato" value="2021-01-01" min="2021-01-01" max="2025-12-31">
 
@@ -116,6 +128,7 @@
             </div>
         </section>
 
+        <!---Fast billedgalleri, hentes ikke fra restdb-->
         <section id="galleri">
             <div class="image-container">
                 <figure>
@@ -133,9 +146,9 @@
             </div>
         </section>
 
+        <!---Indhold af template tag hentes fra restdb, er html for hver enkelt queen-->
         <template>
             <article>
-
                 <img class="billede" src="" alt="">
                 <button id="se_mere">Se mere</button>
                 <p class="navn">Miss </p>
@@ -147,7 +160,7 @@
 
 
 
-
+    <!--Footer --->
     <footer id="footer">
 
         <div class="footer_container">
@@ -160,6 +173,7 @@
             <div class="nyhedsbrev">
                 <p>Tilmeld dig vores nyhedsbrev</p>
                 <div class="mail_boks">
+                    <!--Placeholder tekst/microcopy - "required" er et felt der SKAL udfyldes--->
                     <input placeholder="MIN E-MAILADRESSE" type="text" name="mail" required>
                     <button class="tilmeld_knap">TILMELD ▸</button>
                 </div>
