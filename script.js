@@ -26,8 +26,10 @@
      function myFunction(mediaquery) {
          if (mediaquery.matches) { // If media query matches
              document.querySelector(".kategorier").classList.add("hidden");
+             document.querySelector(".sorter").textContent = "Sortér: ☰";
          } else {
              document.querySelector(".kategorier").classList.remove("hidden");
+             document.querySelector(".sorter").textContent = "Sortér:";
          }
      }
      //opretter variabel som lytter til skærmstørrelse
