@@ -43,6 +43,14 @@
         letter-spacing: .15rem;
     }
 
+    #rating {
+        padding-bottom: 5px;
+        text-align: center;
+    }
+
+    #rating img {
+        width: 6%;
+    }
 
     #booking_knap_container {
         text-align: center;
@@ -124,6 +132,17 @@
             padding-left: 50px;
         }
 */
+
+
+        #rating {
+            padding: 15px 0 10px;
+            text-align: center;
+        }
+
+        #rating img {
+            width: 11%;
+        }
+
 
     }
 
