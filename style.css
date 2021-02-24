@@ -224,26 +224,6 @@ a:hover {
     transition: .3s;
 }
 
-/*booking_knap = i single view*/
-
-#booking_knap {
-    background-color: #2f2f2f;
-    color: white;
-    padding: 10px 25px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    font-size: .8rem;
-}
-
-#booking_knap:hover {
-    background-color: white;
-    color: #2f2f2f;
-    border: 1px solid #9f9f9f;
-    transition: .3s;
-}
-
-
 
 
 
@@ -323,7 +303,7 @@ select {
 
 
 
-/*Galleri*/
+/*-----Galleri-----*/
 
 div.image-container figure {
     display: grid;
@@ -384,8 +364,8 @@ div.image-container figure {
 
 
 
-/*------ STYLING AF FOOTER ------*/
 
+/*------ STYLING AF FOOTER ------*/
 #footer {
     background-color: #2f2f2f;
     position: fixed;
@@ -480,10 +460,7 @@ div.image-container figure {
 
 
 
-
-
 /*------loop view forside------*/
-
 #oversigt {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
@@ -535,54 +512,112 @@ article img {
 
 
 
+/*--------single view--------*/
 
-/*--------SINGLE VIEW MOBIL--------*/
+#row {
+    text-align: center;
+}
+
+#tilbage {
+    background-color: white;
+    color: #2f2f2f;
+    border: 1px solid #9f9f9f;
+    border-radius: 20px;
+    transition: .3s;
+
+
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: .8rem;
+
+    padding: 10px 45px;
+    margin: 60px 0 0px 30px;
+}
+
+#detail {
+    margin: 0;
+}
+
+#col1 {
+    padding: 20px 40px;
+}
+
+#col2 {
+    padding: 0 40px;
+}
+
+#col3 {
+    padding: 30px 40px;
+}
+
+#col2 h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.navn {
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.beskrivelse {
+    padding-top: 15px;
+    font-weight: 100;
+    line-height: 1.7rem;
+}
+
+#infoboks {
+    padding: 35px 35px 45px;
+    background-color: #F7F4F4;
+}
+
+#col3 h4 {
+    font-weight: 600;
+    letter-spacing: .2rem;
+    font-size: .8rem;
+}
+
+#col3 p {
+    padding: 5px 0 25px;
+    font-weight: 100;
+    font-size: .85rem;
+    letter-spacing: .15rem;
+}
 
 #rating_container {
-    padding: 10px 0;
+    padding: 10px 0 0;
     text-align: center;
 }
 
 #rating_billede {
-    width: 40%;
+    width: 35%;
+}
+
+#booking_knap_container {
+    text-align: center;
+}
+
+#booking_knap {
+    background-color: #2f2f2f;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: .8rem;
 }
 
 
 
 
-@media (max-width: 650px) {
-    div.image-container figure {
-        display: flex;
-        gap: 10px;
-    }
-
-    .image-container {
-        overflow-x: scroll;
-        padding: 20px;
-        padding-top: 30px;
-        padding-left: 30px;
-        padding-right: 70px;
-    }
-
-    .image-container figure {
-        flex-basis: 90%;
-        flex-shrink: 0;
-        flex-grow: 1;
-    }
-
-    .image-container img {
-        margin-right: 20px;
-    }
-}
 
 
 
 @media (min-width: 650px) {
 
-
     /*------SPLASH------*/
-
-
     #menuknap {
         display: none;
     }
@@ -607,7 +642,6 @@ article img {
 
 
     /*-------SORTER + OVERSIGT-------*/
-
     #oversigt {
         margin-right: 50px;
     }
@@ -616,7 +650,6 @@ article img {
         width: 500px;
         height: 650px;
     }
-
 
     #se_mere:hover {
         background-color: #2f2f2f;
@@ -674,10 +707,7 @@ article img {
 
 
 
-
-
     /*------BOOKING SEKTION------*/
-
     #booking {
         display: grid;
         grid-template-columns: 45% 55%;
@@ -727,7 +757,6 @@ article img {
 
 
     /*---- STYLING AF FOOTER ----*/
-
     .footer_container {
         max-width: 1000px;
         margin: 0 auto 0 auto;
@@ -764,39 +793,154 @@ article img {
     }
 
 
+
+
+    /*-------SINGLE VIEW------*/
+    #detail {
+        display: grid;
+        grid-template-columns: 40% 35% 25%;
+        grid-template-rows: auto;
+        margin: 0;
+        padding-top: 40px;
+    }
+
+    #row {
+        grid-column: 1/span 1;
+        grid-row: 1/span 1;
+
+        text-align: left;
+    }
+
+    #tilbage {
+        padding: 8px 35px;
+        margin: 30px 0 0px 50px;
+    }
+
+    #tilbage:hover {
+        background-color: #2f2f2f;
+        color: White;
+        cursor: pointer;
+    }
+
+    #col1 {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        padding: 10px 50px;
+        gap: 20px;
+
+        grid-column: 1/span 1;
+        grid-row: 2/span 1;
+        padding-left: 50px;
+        object-fit: cover;
+    }
+
+    #main_billede {
+        width: 320px;
+        height: 642.2px;
+        object-fit: cover;
+    }
+
+    #image_container figure img {
+        padding: 0 0 10px;
+        width: 100px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    #col2 {
+        padding: 0 35px;
+        grid-column: 2/span 1;
+        grid-row: 2/span 1;
+    }
+
+    #infoboks {
+        height: 80vh;
+        padding-top: 30px;
+    }
+
+    #col3 {
+        grid-column: 3/span 1;
+        grid-row: 2/span 1;
+        padding: 10px 50px 0 0;
+    }
+
+
+    #rating_container {
+        padding: 7px 0;
+    }
+
+    #rating_billede {
+        width: 50%;
+    }
+
+    #booking_knap:hover {
+        background-color: white;
+        color: #2f2f2f;
+        border: 1px solid #9f9f9f;
+        transition: .3s;
+    }
+
+
 }
 
-/*media query slutter her*/
+
+
+@media (max-width: 650px) {
+
+    div.image-container figure {
+        display: flex;
+        gap: 10px;
+    }
+
+    .image-container {
+        overflow-x: scroll;
+        padding: 20px;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 70px;
+    }
+
+    .image-container figure {
+        flex-basis: 90%;
+        flex-shrink: 0;
+        flex-grow: 1;
+    }
+
+    .image-container img {
+        margin-right: 20px;
+    }
 
 
 
 
+    /*----galleri i single view----*/
+    #single_galleri {
+        padding-top: 0px;
+        padding-left: 30px;
+        padding-right: 50px;
+    }
 
+    div#image_container #single_galleri figure {
+        display: flex;
+        gap: 10px;
+    }
 
+    #image_container {
+        overflow-x: scroll;
+        padding: 20px;
+    }
 
+    #image_container figure {
+        flex-basis: 50%;
+        flex-shrink: 0;
+        flex-grow: 1;
+    }
 
+    #image_container #single_galleri figure img {
+        margin-right: 20px;
+    }
 
-
-
-
-
-
-
-
-/*--------SINGLE VIEW DESKTOP--------*/
-
-#rating_container {
-    padding: 10px 0;
-    text-align: center;
 }
-
-#rating_billede {
-    width: 50%;
-}
-
-
-
-
 
 
 
@@ -817,7 +961,6 @@ article img {
 
 
 /*------animationer-------*/
-
 
 
 /*burger menuanimation*/
