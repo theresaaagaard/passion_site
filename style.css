@@ -8,7 +8,7 @@ img {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Spartan', sans-serif;
     /*    background-color: white;*/
     /*    margin: 0;*/
 }
@@ -25,13 +25,6 @@ h2 {
 
 h3 {
     font-size: 1rem;
-    font-weight: 400;
-}
-
-h4 {
-    font-size: 0.9rem;
-    ;
-    font-weight: 600;
 }
 
 p {
@@ -54,10 +47,10 @@ nav a {
     text-decoration: none;
     color: black;
     padding-bottom: 80px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 #menuknap {
@@ -130,11 +123,12 @@ nav a {
     background-color: white;
     padding: 15px 20px;
     width: 45%;
+
     text-transform: uppercase;
     text-align: center;
     letter-spacing: .2rem;
     font-size: 1rem;
-    font-weight: 100;
+    font-weight: 200;
     margin: auto;
     margin-top: 30px;
 }
@@ -146,7 +140,7 @@ button {
     border-radius: 8px;
     padding: 5px 20px;
     background-color: white;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 button:hover {
@@ -282,7 +276,6 @@ article p {
     text-align: center;
     padding-top: 55px;
     font-size: 1.2rem;
-    font-weight: 700;
     letter-spacing: .2rem;
     text-transform: uppercase;
     /*    color:white;*/

@@ -1,3 +1,7 @@
+* {
+    font-family: 'Spartan', sans-serif;
+}
+
 #row {
     text-align: center;
 }
@@ -43,6 +47,7 @@
     padding-top: 15px;
     font-weight: 100;
     padding: 15px 0 35px;
+    line-height: 1.7rem;
 }
 
 
