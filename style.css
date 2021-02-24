@@ -302,6 +302,19 @@ article img {
 
 
 
+/*--------SINGLE VIEW MOBIL--------*/
+
+#rating_container {
+    padding: 10px 0;
+    text-align: center;
+}
+
+#rating_billede {
+    width: 40%;
+}
+
+
+
 
 @media (max-width: 650px) {
     div.image-container figure {
@@ -403,6 +416,25 @@ article img {
     }
 
 }
+
+
+
+
+
+
+
+/*--------SINGLE VIEW DESKTOP--------*/
+
+#rating_container {
+    padding: 10px 0;
+    text-align: center;
+}
+
+#rating_billede {
+    width: 50%;
+}
+
+
 
 
 
