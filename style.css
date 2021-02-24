@@ -2,26 +2,32 @@
     margin: 0;
     padding: 0;
 }
+
 img {
     width: 100%;
 }
+
 body {
     font-family: 'Spartan', sans-serif;
     /*    background-color: white;*/
     /*    margin: 0;*/
     margin-bottom: 310px;
 }
+
 main {
     background-color: white;
     margin: 0;
     margin-bottom: 180px;
 }
+
 h2 {
     font-size: 1.5rem;
 }
+
 h3 {
     font-size: 1rem;
 }
+
 p {
     font-size: 0.9rem;
 }
@@ -36,6 +42,7 @@ p {
     top: 8px;
     z-index: 2;
 }
+
 nav {
     width: 100%;
     position: fixed;
@@ -45,6 +52,7 @@ nav {
     height: 60px;
     background-color: white;
 }
+
 nav a {
     text-decoration: none;
     color: black;
@@ -54,6 +62,7 @@ nav a {
     letter-spacing: .2rem;
     font-weight: 200;
 }
+
 #menuknap {
     margin-right: 20px;
     cursor: pointer;
@@ -61,17 +70,20 @@ nav a {
     z-index: 2;
     padding-top: 10px;
 }
+
 #link_box {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-top: 100px;
 }
+
 #navbar {
     background-color: white;
     width: 100vw;
     height: 100vh;
 }
+
 .bar1,
 .bar2,
 .bar3 {
@@ -82,14 +94,17 @@ nav a {
     transition: 0.4s;
     border-radius: 5px;
 }
+
 .change .bar1 {
     transform: rotate(-45deg) translate(-8px, 5px);
     transform: rotate(-45deg) translate(-8px, 5px);
     background-color: #454545;
 }
+
 .change .bar2 {
     opacity: 0;
 }
+
 .change .bar3 {
     transform: rotate(45deg) translate(-8px, -7px);
     transform: rotate(45deg) translate(-8px, -7px);
@@ -101,19 +116,23 @@ nav a {
 #splash {
     display: grid;
 }
+
 #splash img,
 .splash_container {
     grid-area: 1/1;
 }
+
 .splash_container {
     place-self: center center;
 }
+
 #splash h1 {
     color: white;
     font-size: 3rem;
     margin-top: 80px;
     text-align: center;
 }
+
 #splash p {
     max-width: 600px;
     color: white;
@@ -124,12 +143,14 @@ nav a {
     font-weight: 100;
     line-height: 25px;
 }
+
 #splash img {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
     object-position: 70%;
 }
+
 .pil {
     position: absolute;
     bottom: 10px;
@@ -142,13 +163,16 @@ nav a {
     display: flex;
     flex-direction: column;
 }
+
 .kategorier button {
     letter-spacing: .2rem;
     padding: 20px;
 }
+
 #liste {
     margin-bottom: 40px;
 }
+
 .sorter {
     border-radius: 25px;
     border: 1px solid #a2a2a2;
@@ -173,14 +197,17 @@ button {
     background-color: white;
     font-weight: 300;
 }
+
 button:hover {
     background-color: none;
     color: #FF1ACA;
 }
+
 a {
     color: black;
     text-decoration: none;
 }
+
 a:hover {
     color: #FF1ACA;
     transition: .3s;
@@ -192,23 +219,28 @@ a:hover {
     background-color: #dfdfed;
     padding: 40px 45px;
 }
+
 #booking p {
     padding-top: 10px;
     font-weight: 100;
 }
+
 #booking_tekst {
     padding-bottom: 10px;
 }
+
 #form_container {
     display: flex;
     justify-content: center;
 }
+
 label {
     display: block;
     padding: 20px 5px 6px;
     font-size: 0.9rem;
     font-weight: 100;
 }
+
 #booking input,
 textarea,
 select {
@@ -219,15 +251,19 @@ select {
     width: 240px;
     font-weight: 100;
 }
+
 textarea {
     padding-top: 10px;
 }
+
 date {
     text-transform: uppercase;
 }
+
 select {
     width: 262px;
 }
+
 #book_knap {
     background-color: white;
     color: #2f2f2f;
@@ -235,6 +271,7 @@ select {
     text-transform: uppercase;
     letter-spacing: .1rem;
 }
+
 #book_knap_container {
     text-align: center;
     margin-top: 15px;
@@ -248,41 +285,52 @@ div.image-container figure {
     grid-auto-rows: 1fr;
     gap: 10px;
 }
+
 .pic1 {
     grid-column: 1/2;
 }
+
 .pic2 {
     grid-column: 2/3;
 }
+
 .pic3 {
     grid-column: 3/4;
 }
+
 .pic4 {
     grid-column: 4/5;
 }
+
 .pic5 {
     grid-column: 5/6;
 }
+
 .pic6 {
     grid-column: 1/2;
     grid-row: 2/3;
 }
+
 .pic7 {
     grid-column: 2/3;
     grid-row: 2/3;
 }
+
 .pic8 {
     grid-column: 3/4;
     grid-row: 2/3;
 }
+
 .pic9 {
     grid-column: 4/5;
     grid-row: 2/3;
 }
+
 .pic10 {
     grid-column: 5/6;
     grid-row: 2/3;
 }
+
 #galleri {
     padding-bottom: 10px;
 }
@@ -296,11 +344,13 @@ div.image-container figure {
     width: 100vw;
     z-index: -1;
 }
+
 .nyhedsbrev {
     display: table;
     margin: 0 auto;
     padding-top: 20px;
 }
+
 .nyhedsbrev p {
     color: white;
     text-align: center;
@@ -310,56 +360,66 @@ div.image-container figure {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
 }
+
 .streg {
     width: 355px;
     height: 2px;
     background-color: white;
 }
+
 #footer input {
     background-color: #2f2f2f;
     border: none;
     letter-spacing: .13rem;
 }
+
 .tilmeld_knap {
     background-color: #2f2f2f;
     border: none;
     color: white;
     font-size: 0.7rem;
 }
+
 .mail_boks input {
     color: white;
     text-transform: inherit;
     font-size: 0.9rem;
     font-weight: 100;
 }
+
 .footer_contact {
     color: white;
     text-align: center;
     padding: 20px;
 }
+
 .footer_contact p {
     font-size: 1rem;
     padding-bottom: 5px;
     font-weight: 100;
     font-family: 'Spartan', sans-serif;
 }
+
 .footer_contact p:first-child {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
 }
+
 .medier {
     display: table;
     margin: 0 auto;
     padding: 10px;
     margin-top: 10px;
 }
+
 .ophav {
     color: #6d6d6d;
     text-align: center;
     margin-bottom: 20px;
     font-size: 0.8rem;
 }
+
 .medier img {
     width: 25px;
     height: 25px;
@@ -371,11 +431,13 @@ div.image-container figure {
 article {
     display: grid;
 }
+
 #se_mere,
 article img,
 article p {
     grid-area: 1/1;
 }
+
 #se_mere {
     place-self: end center;
     margin-bottom: 30px;
@@ -387,6 +449,7 @@ article p {
     text-transform: uppercase;
     letter-spacing: .1rem;
 }
+
 article p {
     text-align: center;
     padding-top: 55px;
@@ -394,6 +457,7 @@ article p {
     letter-spacing: .2rem;
     text-transform: uppercase;
 }
+
 article img {
     place-self: center;
     margin-top: 90px;
@@ -407,6 +471,7 @@ article img {
 #row {
     text-align: center;
 }
+
 #tilbage {
     background-color: white;
     color: #2f2f2f;
@@ -419,58 +484,72 @@ article img {
     padding: 10px 45px;
     margin: 60px 0 0px 30px;
 }
+
 #detail {
     margin: 0;
 }
+
 #col1 {
     padding: 20px 40px;
 }
+
 #col2 {
     padding: 0 40px;
 }
+
 #col3 {
     padding: 30px 40px;
 }
+
 #col2 h2 {
     font-size: 1.2rem;
     font-weight: 400;
     padding-top: 10px;
 }
+
 .navn {
     letter-spacing: .2rem;
     text-transform: uppercase;
     font-weight: 400;
 }
+
 .beskrivelse {
     padding-top: 15px;
     font-weight: 100;
     line-height: 1.7rem;
 }
+
 #infoboks {
     padding: 35px 35px 45px;
-    background-color: #F7F4F4;
+    background-color: #dfdfed;
 }
+
 #col3 h4 {
     font-weight: 600;
     letter-spacing: .2rem;
     font-size: .8rem;
 }
+
 #col3 p {
     padding: 5px 0 25px;
     font-weight: 100;
     font-size: .85rem;
     letter-spacing: .15rem;
 }
+
 #rating_container {
     padding: 10px 0 0;
     text-align: center;
 }
+
 #rating_billede {
     width: 35%;
 }
+
 #booking_knap_container {
     text-align: center;
 }
+
 #booking_knap {
     background-color: #2f2f2f;
     color: white;
@@ -480,14 +559,18 @@ article img {
     letter-spacing: .1rem;
     font-size: .8rem;
 }
+
 @media (min-width: 650px) {
+
     /*------SPLASH------*/
     #menuknap {
         display: none;
     }
+
     #navbar {
         display: contents;
     }
+
     #link_box {
         display: flex;
         flex-direction: row;
@@ -495,9 +578,11 @@ article img {
         margin-right: 30px;
         margin-top: 20px;
     }
+
     #link_box a {
         font-size: 1.1rem;
     }
+
     /*-------SORTER + OVERSIGT-------*/
     #oversigt {
         margin-right: 50px;
@@ -505,10 +590,12 @@ article img {
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
     }
+
     article img {
         width: 100%;
         height: 90%;
     }
+
     #se_mere:hover {
         background-color: #2f2f2f;
         padding: 8px 40px;
@@ -517,21 +604,26 @@ article img {
         transition: .3s;
         cursor: pointer;
     }
+
     #sorter_section {
         margin-top: 60px;
         position: sticky;
         top: 10vh;
         align-self: flex-start
     }
+
     article p {
         padding-top: 40px;
     }
+
     .navn {
         font-size: 0.7rem;
     }
+
     .kategorier {
         margin-left: -50px;
     }
+
     .kategorier button {
         letter-spacing: .2rem;
         padding-top: 10px;
@@ -540,15 +632,18 @@ article img {
         font-weight: 200;
         cursor: pointer;
     }
+
     .kategorier button:hover {
         color: #FF1ACA;
         transition: .3s;
     }
+
     #liste {
         display: grid;
         grid-template-columns: 20% 80%;
         margin-bottom: 45px;
     }
+
     .sorter {
         border: none;
         text-transform: uppercase;
@@ -559,34 +654,42 @@ article img {
         margin-top: 30px;
         text-align: justify;
     }
+
     /*------BOOKING SEKTION------*/
     #booking {
         display: grid;
         grid-template-columns: 45% 55%;
         padding: 50px;
     }
+
     #booking h2 {
         font-size: 2rem;
     }
+
     #booking p {
         font-size: 1.1rem;
         font-weight: 100;
     }
+
     #booking_tekst {
         place-self: center end;
     }
+
     label {
         font-size: 0.95rem;
     }
+
     #booking input,
     textarea,
     select {
         width: 300px;
         padding: 10px;
     }
+
     select {
         width: 322px;
     }
+
     #book_knap:hover {
         background-color: #2f2f2f;
         padding: 5px 35px;
@@ -595,6 +698,7 @@ article img {
         transition: .3s;
         cursor: pointer;
     }
+
     /*---- STYLING AF FOOTER ----*/
     .footer_container {
         max-width: 1000px;
@@ -603,27 +707,34 @@ article img {
         grid-template-columns: 1fr 1fr;
         padding-top: 80px;
     }
+
     .tilmeld_knap:hover {
         color: #ff27ff;
         cursor: pointer;
     }
+
     .nyhedsbrev {
         padding-top: 20px;
     }
+
     .medier {
         margin-top: 20px;
         margin-bottom: 10px;
     }
+
     .mail_boks input {
         width: 240px;
     }
+
     .footer_contact p {
         letter-spacing: 0.1rem;
         font-size: 0.9rem;
     }
+
     .footer_contact p:first-child {
         margin-bottom: 10px;
     }
+
     /*-------SINGLE VIEW------*/
     #detail {
         display: grid;
@@ -632,20 +743,24 @@ article img {
         margin: 0;
         padding-top: 40px;
     }
+
     #row {
         grid-column: 1/span 1;
         grid-row: 1/span 1;
         text-align: left;
     }
+
     #tilbage {
         padding: 8px 35px;
         margin: 30px 0 0px 50px;
     }
+
     #tilbage:hover {
         background-color: #2f2f2f;
         color: White;
         cursor: pointer;
     }
+
     #col1 {
         display: grid;
         grid-template-columns: 70% 30%;
@@ -656,37 +771,45 @@ article img {
         padding-left: 50px;
         object-fit: cover;
     }
+
     #main_billede {
         width: 320px;
         height: 642.2px;
         object-fit: cover;
     }
+
     #image_container figure img {
         padding: 0 0 10px;
         width: 100px;
         height: 150px;
         object-fit: cover;
     }
+
     #col2 {
         padding: 0 35px;
         grid-column: 2/span 1;
         grid-row: 2/span 1;
     }
+
     #infoboks {
-        height: 80vh;
+        height: 66vh;
         padding-top: 30px;
     }
+
     #col3 {
         grid-column: 3/span 1;
         grid-row: 2/span 1;
         padding: 10px 50px 0 0;
     }
+
     #rating_container {
-        padding: 7px 0;
+        padding: 7px 0 20px;
     }
+
     #rating_billede {
         width: 50%;
     }
+
     #booking_knap:hover {
         background-color: white;
         color: #2f2f2f;
@@ -694,19 +817,23 @@ article img {
         transition: .3s;
     }
 }
+
 @media (min-width: 900px) {
     .navn {
         font-size: 1.2rem;
     }
+
     article p {
         padding-top: 40px;
     }
 }
+
 @media (max-width: 650px) {
     div.image-container figure {
         display: flex;
         gap: 10px;
     }
+
     .image-container {
         overflow-x: scroll;
         padding: 20px;
@@ -714,33 +841,40 @@ article img {
         padding-left: 30px;
         padding-right: 70px;
     }
+
     .image-container figure {
         flex-basis: 90%;
         flex-shrink: 0;
         flex-grow: 1;
     }
+
     .image-container img {
         margin-right: 20px;
     }
+
     /*----galleri i single view----*/
     #single_galleri {
         padding-top: 0px;
         padding-left: 30px;
         padding-right: 50px;
     }
+
     div#image_container #single_galleri figure {
         display: flex;
         gap: 10px;
     }
+
     #image_container {
         overflow-x: scroll;
         padding: 20px;
     }
+
     #image_container figure {
         flex-basis: 50%;
         flex-shrink: 0;
         flex-grow: 1;
     }
+
     #image_container #single_galleri figure img {
         margin-right: 20px;
     }
@@ -751,6 +885,7 @@ article img {
 .valgt {
     color: #ff1aca !important;
 }
+
 .hidden {
     display: none;
 }
@@ -766,25 +901,30 @@ article img {
     animation-iteration-count: 1;
     animation-timing-function: cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
+
 @keyframes slide_kf {
     0% {
         transform: translateX(100%);
     }
+
     100% {
         transform: translateX(0%);
     }
 }
+
 .closemenu {
     animation-name: slideout_kf;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
     animation-timing-function: cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
+
 @keyframes slideout_kf {
     100% {
         transform-origin: 0% 0%;
         transform: translateX(100%);
     }
+
     0% {
         transform-origin: 0% 0%;
         transform: translateX(0%);
@@ -800,10 +940,12 @@ article img {
     animation-direction: alternate;
     animation-fill-mode: both;
 }
+
 @keyframes bounce_kf {
     100% {
         transform: translateY(-5px);
     }
+
     0% {
         transform: translateY(8px);
     }
