@@ -34,6 +34,7 @@ select {
     border-radius: 15px;
     border: .5px solid #555555;
     width: 240px;
+    font-weight: 100;
 }
 
 textarea {
