@@ -101,6 +101,56 @@ nav a {
     background-color: #454545;
 }
 
+
+
+/*---------SPLASH---------*/
+
+#splash {
+    display: grid;
+}
+
+#splash img,
+.splash_container {
+    grid-area: 1/1;
+}
+
+.splash_container {
+    place-self: center center;
+}
+
+#splash h1 {
+    color: white;
+    font-size: 3rem;
+    margin-top: 80px;
+    text-align: center;
+}
+
+#splash p {
+    max-width: 600px;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 15px;
+    letter-spacing: 0.1rem;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+#splash img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 70%;
+}
+
+.pil {
+    position: absolute;
+    bottom: 10px;
+    left: 49%;
+}
+
+
+
 /*--------------sortér knap----------------*/
 
 .kategorier {
@@ -339,73 +389,108 @@ article img {
 @media (min-width: 650px) {
 
 
-    #oversigt {
-        margin-right: 50px;
+
+
+    /*------SPLASH------*/
+
+    nav {
+        background-color: white;
+        height: 60px;
     }
 
-    article img {
-        width: 500px;
-        height: 650px;
+    #menuknap {
+        display: none;
     }
 
-
-    #se_mere:hover {
-        background-color: #2f2f2f;
-        padding: 8px 40px;
-        border-radius: 20px;
-        color: white;
-        transition: .3s;
-        cursor: pointer;
+    #navbar {
+        display: contents;
     }
 
-    #sorter_section {
-        margin-top: 60px;
-        position: sticky;
-        top: 10vh;
-        align-self: flex-start
-    }
-
-    .kategorier {
+    #link_box {
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        flex-direction: row;
+        grid-gap: 20px;
+        margin-right: 30px;
+        margin-top: 20px;
     }
 
-    .kategorier button {
-        letter-spacing: .2rem;
-        padding-top: 10px;
-        text-align: justify;
-        margin-left: 60px;
-        font-weight: 200;
-        cursor: pointer;
+    #link_box a {
+        font-size: 1.1rem;
     }
+}
 
-    .kategorier button:hover {
-        color: #FF1ACA;
-        transition: .3s;
-    }
 
-    #liste {
-        display: grid;
-        grid-template-columns: 20% 80%;
-        margin-bottom: 45px;
-    }
 
-    .sorter {
-        border: none;
-        width: 45%;
-        text-transform: uppercase;
-        letter-spacing: .2rem;
-        font-size: 1rem;
-        font-weight: 400;
-        margin-left: 60px;
-        margin-top: 30px;
-        text-align: justify;
-    }
 
-    #book_knap {
-        cursor: pointer;
-    }
+/*-------SORTER + OVERSIGT-------*/
+
+#oversigt {
+    margin-right: 50px;
+}
+
+article img {
+    width: 500px;
+    height: 650px;
+}
+
+
+#se_mere:hover {
+    background-color: #2f2f2f;
+    padding: 8px 40px;
+    border-radius: 20px;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#sorter_section {
+    margin-top: 60px;
+    position: sticky;
+    top: 10vh;
+    align-self: flex-start
+}
+
+.kategorier {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.kategorier button {
+    letter-spacing: .2rem;
+    padding-top: 10px;
+    text-align: justify;
+    margin-left: 60px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.kategorier button:hover {
+    color: #FF1ACA;
+    transition: .3s;
+}
+
+#liste {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-bottom: 45px;
+}
+
+.sorter {
+    border: none;
+    width: 45%;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 60px;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+#book_knap {
+    cursor: pointer;
+}
 
 }
 
@@ -444,8 +529,15 @@ article img {
     display: none;
 }
 
+
+
+
+
 /*------animationer-------*/
 
+
+
+/*burger menuanimation*/
 .openmenu {
     animation-name: slide_kf;
     animation-duration: 0.5s;
@@ -479,5 +571,26 @@ article img {
     0% {
         transform-origin: 0% 0%;
         transform: translateX(0%);
+    }
+}
+
+
+
+/*splash animation*/
+.bounce {
+    animation-name: bounce_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+
+@keyframes bounce_kf {
+    100% {
+        transform: translateY(-5px);
+    }
+
+    0% {
+        transform: translateY(8px);
     }
 }
