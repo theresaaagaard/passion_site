@@ -227,7 +227,64 @@ a:hover {
     transition: .3s;
 }
 
-/*book_knap = i sektion med booking på forside*/
+
+
+
+
+
+
+/*----BOOKING SECTION----*/
+
+#booking {
+    background-color: #F7F4F4;
+    padding: 40px 45px;
+}
+
+#booking p {
+    padding-top: 10px;
+    font-weight: 100;
+}
+
+#booking_tekst {
+    padding-bottom: 10px;
+}
+
+#form_container {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    display: block;
+    padding: 20px 5px 6px;
+
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+
+#booking input,
+textarea,
+select {
+    padding: 5px 10px;
+    font-family: sans-serif;
+    border-radius: 15px;
+    border: .5px solid #555555;
+    width: 240px;
+    font-weight: 100;
+}
+
+textarea {
+    padding-top: 10px;
+}
+
+date {
+    text-transform: uppercase;
+}
+
+select {
+    width: 262px;
+}
+
 
 #book_knap {
     background-color: white;
@@ -236,6 +293,19 @@ a:hover {
     text-transform: uppercase;
     letter-spacing: .1rem;
 }
+
+
+#book_knap_container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
 
 /*Galleri*/
 
@@ -389,8 +459,6 @@ article img {
 @media (min-width: 650px) {
 
 
-
-
     /*------SPLASH------*/
 
 
@@ -483,11 +551,72 @@ article img {
         text-align: justify;
     }
 
-    #book_knap {
+
+
+
+
+    /*------BOOKING SEKTION------*/
+
+    #booking {
+        display: grid;
+        grid-template-columns: 45% 55%;
+
+        background-color: #F7F4F4;
+        padding: 50px;
+    }
+
+    #booking h2 {
+        font-size: 2rem;
+    }
+
+    #booking p {
+        font-size: 1.1rem;
+        font-weight: 100;
+    }
+
+    #booking_tekst {
+        place-self: center end;
+    }
+
+    label {
+        font-size: 0.95rem;
+    }
+
+    #booking input,
+    textarea,
+    select {
+        width: 300px;
+        padding: 10px;
+    }
+
+    select {
+        width: 322px;
+    }
+
+    #book_knap:hover {
+        background-color: #2f2f2f;
+        padding: 5px 35px;
+        border-radius: 15px;
+        color: white;
+        transition: .3s;
         cursor: pointer;
     }
 
+
+
+
 }
+
+/*media query slutter her*/
+
+
+
+
+
+
+
+
+
 
 
 
