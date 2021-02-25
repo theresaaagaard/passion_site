@@ -12,6 +12,7 @@ body {
     /*    background-color: white;*/
     /*    margin: 0;*/
     margin-bottom: 310px;
+    /*plads til footeren kan dukke op*/
 }
 
 main {
@@ -46,9 +47,11 @@ p {
 nav {
     width: 100%;
     position: fixed;
+    /*nav følger med når man scroller*/
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    /*nav'en placeres i højre side*/
     height: 60px;
     background-color: white;
 }
@@ -59,6 +62,7 @@ nav a {
     padding-bottom: 80px;
     font-size: 1.3rem;
     text-transform: uppercase;
+    /*alt skrives med blokbogstaver*/
     letter-spacing: .2rem;
     font-weight: 200;
 }
@@ -66,6 +70,7 @@ nav a {
 #menuknap {
     margin-right: 20px;
     cursor: pointer;
+    /*en mus der viser man kan klikke*/
     position: fixed;
     z-index: 2;
     padding-top: 10px;
@@ -92,11 +97,14 @@ nav a {
     background-color: black;
     margin: 6px 0;
     transition: 0.4s;
+    /*burgermenuen åbner blødt*/
     border-radius: 5px;
+    /*burgermenuen får runde kanter*/
 }
 
 .change .bar1 {
     transform: rotate(-45deg) translate(-8px, 5px);
+    /*vi roterer samt placerer stregerne til burgermenuen*/
     transform: rotate(-45deg) translate(-8px, 5px);
     background-color: #454545;
 }
@@ -120,6 +128,7 @@ nav a {
 #splash img,
 .splash_container {
     grid-area: 1/1;
+    /*vi giver img og container samme plads i grid'et, så vi kan placere teksten ovenpå billedet - følger hierakiet i html'en*/
 }
 
 .splash_container {
@@ -135,6 +144,7 @@ nav a {
 
 #splash p {
     max-width: 600px;
+    /*brødteksten må max fylde 600px*/
     color: white;
     text-align: center;
     font-size: 0.9rem;
@@ -162,6 +172,7 @@ nav a {
 .kategorier {
     display: flex;
     flex-direction: column;
+    /*vi laver sortér menuen i kolonner, så det er modsat af nav'en*/
 }
 
 .kategorier button {
@@ -182,10 +193,12 @@ nav a {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: .2rem;
+    /*skaber luft mellem bogstaverne for et mere moderne look*/
     font-size: 1rem;
     font-weight: 200;
     margin: auto;
     margin-top: 30px;
+    /*skaber white-space*/
 }
 
 /*------LINKS-----*/
@@ -211,6 +224,7 @@ a {
 a:hover {
     color: #FF1ACA;
     transition: .3s;
+    /*skaber en blød hover-effekt*/
 }
 
 /*----BOOKING SECTION----*/
@@ -345,6 +359,7 @@ div.image-container figure {
     bottom: 0;
     width: 100vw;
     z-index: -1;
+    /*footer bagved body, således den først dukker op, når man scroller helt ned, og body "åbner" footer */
 }
 
 .nyhedsbrev {
@@ -522,7 +537,7 @@ article img {
 }
 
 #infoboks {
-    padding: 35px 35px 45px;
+    padding: 35px 40px 45px;
     background-color: #dfdfed;
 }
 
@@ -549,28 +564,33 @@ article img {
 }
 
 #booking_knap_container {
+    margin: auto;
     text-align: center;
+    width: 150px;
+    margin-top: 20px;
 }
 
 #booking_knap {
     background-color: #2f2f2f;
     color: white;
-    padding: 10px 25px;
+    padding: 10px 15px;
     border-radius: 20px;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    font-size: .8rem;
+    font-size: .6rem;
 }
 
 @media (min-width: 650px) {
 
     /*------SPLASH------*/
     #menuknap {
+        /*burgermenu er ikke synlig over 650px*/
         display: none;
     }
 
     #navbar {
         display: contents;
+        /*nav baren bliver nu vist i desktop version*/
     }
 
     #link_box {
@@ -587,6 +607,7 @@ article img {
 
     /*-------SORTER + OVERSIGT-------*/
     #oversigt {
+        /*container over alle queens, som bliver hentet ind fra restdb*/
         margin-right: 50px;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -692,8 +713,6 @@ article img {
         width: 322px;
     }
 
-
-
     #book_knap:hover {
         background-color: #2f2f2f;
         padding: 5px 35px;
@@ -739,18 +758,14 @@ article img {
         margin-bottom: 10px;
     }
 
-    /*-------SINGLE VIEW------*/
+    /*-------SINGLE VIEW TABLET VERSION------*/
     #detail {
         display: grid;
-        grid-template-columns: 45% 30% 25%;
-        grid-template-rows: auto;
-        margin: 0;
+        grid-template-rows: 70px 1fr 1fr;
         padding-top: 40px;
     }
 
     #row {
-        grid-column: 1/span 1;
-        grid-row: 1/span 1;
         text-align: left;
     }
 
@@ -773,7 +788,7 @@ article img {
         grid-column: 1/span 1;
         grid-row: 2/span 1;
         object-fit: cover;
-        margin-bottom: 140px;
+        margin-bottom: 20px;
     }
 
     #main_billede {
@@ -792,9 +807,13 @@ article img {
         width: 100px;
         height: 150px;
 */
-        width: 9vw;
-        height: 18vh;
+        width: 14vw;
+        height: 25vh;
         object-fit: cover;
+    }
+
+    .col2_col3_container {
+        display: flex;
     }
 
     #col2 {
@@ -805,8 +824,9 @@ article img {
 
     #infoboks {
         height: 68vh;
+        width: 30vw;
         padding-top: 30px;
-        margin-bottom: 100px;
+        margin-bottom: 20px;
     }
 
     #col3 {
@@ -839,9 +859,109 @@ article img {
     article p {
         padding-top: 40px;
     }
+
+    /*-------SINGLE VIEW DESKTOP------*/
+    #detail {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 70px 1fr;
+        margin: 0;
+        padding-top: 40px;
+    }
+
+    #row {
+        grid-column: 1/span 1;
+        grid-row: 1/span 1;
+        text-align: left;
+    }
+
+    #tilbage {
+        padding: 8px 35px;
+        margin: 30px 0 0px 50px;
+    }
+
+    #tilbage:hover {
+        background-color: #2f2f2f;
+        color: White;
+        cursor: pointer;
+    }
+
+    #col1 {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        padding: 10px 50px;
+        gap: 20px;
+        grid-column: 1/span 1;
+        grid-row: 2/span 1;
+        object-fit: cover;
+        margin-bottom: 140px;
+        max-height: 80vh;
+    }
+
+    #main_billede {
+        /*
+        width: 320px;
+        height: 642.2px;
+*/
+        width: 100%;
+        max-height: 97.9%;
+        object-fit: cover;
+    }
+
+    #image_container figure img {
+        padding: 0 0 10px;
+        /*
+        width: 100px;
+        height: 150px;
+*/
+        width: 9vw;
+        height: 18vh;
+        object-fit: cover;
+    }
+
+    .col2_col3_container {
+        grid-row: 2/ span 1;
+    }
+
+    #col2 {
+        padding: 0 15px;
+        grid-column: 2/span 1;
+        grid-row: 2/span 1;
+    }
+
+    #infoboks {
+        height: 68vh;
+        width: 20vw;
+        padding-top: 30px;
+        margin-bottom: 100px;
+        padding: 35px 20px 45px;
+    }
+
+    #col3 {
+        grid-column: 3/span 1;
+        grid-row: 2/span 1;
+        padding: 10px 50px 0 0;
+    }
+
+    #rating_container {
+        padding: 7px 0 20px;
+    }
+
+    #rating_billede {
+        width: 50%;
+    }
+
+    #booking_knap:hover {
+        background-color: white;
+        color: #2f2f2f;
+        border: 1px solid #9f9f9f;
+        transition: .3s;
+    }
 }
 
 @media (max-width: 650px) {
+
+    /*----galleri i single view----*/
     div.image-container figure {
         display: flex;
         gap: 10px;
@@ -865,25 +985,29 @@ article img {
         margin-right: 20px;
     }
 
-    /*----galleri i single view----*/
+
     #single_galleri {
         padding-top: 0px;
         padding-left: 30px;
         padding-right: 50px;
     }
 
+    /*----galleri i loop view----*/
     div#image_container #single_galleri figure {
         display: flex;
         gap: 10px;
     }
 
     #image_container {
+        /*container der holder billederne i galleri*/
         overflow-x: scroll;
+        /*gør så vi kan scrolle til siden på mobil for at skabe plads*/
         padding: 20px;
     }
 
     #image_container figure {
         flex-basis: 50%;
+        /*gør så vi kan se en del af næste billede, så der vises at vi kan scrolle til siden */
         flex-shrink: 0;
         flex-grow: 1;
     }
@@ -900,6 +1024,7 @@ article img {
 }
 
 .hidden {
+    /*bruges til burgermenu som ikke skal vises i desktop*/
     display: none;
 }
 
@@ -909,6 +1034,7 @@ article img {
 /*burger menuanimation*/
 
 .openmenu {
+    /*animation der gør at burgermenuen åbner blødt*/
     animation-name: slide_kf;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
@@ -926,6 +1052,7 @@ article img {
 }
 
 .closemenu {
+    /*animation der gør at burgermenuen lukker blødt*/
     animation-name: slideout_kf;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
@@ -933,7 +1060,7 @@ article img {
 }
 
 @keyframes slideout_kf {
-    100% {
+    / 100% {
         transform-origin: 0% 0%;
         transform: translateX(100%);
     }
@@ -947,6 +1074,7 @@ article img {
 /*splash animation*/
 
 .bounce {
+    /*animation der gør at pilen hopper på splashbilledet*/
     animation-name: bounce_kf;
     animation-duration: 1s;
     animation-iteration-count: infinite;
