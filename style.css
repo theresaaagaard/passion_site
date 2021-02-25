@@ -140,6 +140,7 @@ nav a {
     font-size: 3rem;
     margin-top: 80px;
     text-align: center;
+    letter-spacing: 0.9rem;
 }
 
 #splash p {
@@ -166,6 +167,7 @@ nav a {
     bottom: 10px;
     left: 49%;
 }
+
 
 /*--------------sortér knap----------------*/
 
@@ -1084,10 +1086,10 @@ article img {
 
 @keyframes bounce_kf {
     100% {
-        transform: translateY(-5px);
+        transform: translateY(-5px) scale(3);
     }
 
     0% {
-        transform: translateY(8px);
+        transform: translateY(8px) scale(3);
     }
 }
