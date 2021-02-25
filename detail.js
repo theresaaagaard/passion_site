@@ -40,6 +40,21 @@
             document.querySelector("#tilbage").addEventListener("click", tilbageTilOversigt);
         }
 
+
+        const ekstraBilleder = document.querySelectorAll(".ekstra_billede");
+        //eventlistener der lytter til at der bliver klikket på de små billeder
+        ekstraBilleder.forEach(knap => knap.addEventListener("click", skiftBillede));
+
+        function skiftBillede() {
+            console.log(this);
+            //skifter det store billede ud med billedet, der er blevet klikket på
+            document.querySelector("#main_billede").src = this.src;
+        }
+
+
+
+
+
         function tilbageTilOversigt() {
             history.back();
         }
