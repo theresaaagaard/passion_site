@@ -144,14 +144,14 @@ nav a {
 }
 
 #splash p {
-    max-width: 600px;
-    /*brødteksten må max fylde 600px*/
+    max-width: 680px;
+    /*brødteksten må maks fylde 680px*/
     color: white;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin: 15px;
     letter-spacing: 0.1rem;
-    font-weight: 100;
+    font-weight: 400;
     line-height: 25px;
 }
 
