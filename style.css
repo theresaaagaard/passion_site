@@ -308,7 +308,7 @@ div.image-container figure {
 .image-container figure img {
 
     object-fit: cover;
-    height: 245px;
+    height: 400px;
     width: 100%;
 
 }
