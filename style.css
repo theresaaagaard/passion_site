@@ -807,6 +807,10 @@ article img {
         object-fit: cover;
     }
 
+    .ekstra_billede {
+        cursor: pointer;
+    }
+
     #image_container figure img {
         padding: 0 0 10px;
         /*
