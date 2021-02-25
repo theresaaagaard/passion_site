@@ -88,7 +88,7 @@
              klon.querySelector(".navn").textContent += queen.navn;
              klon.querySelector("img").src = medieurl + queen.billede[0];
 
-
+             klon.querySelector(".billede").addEventListener("click", () => visDetaljer(queen));
              klon.querySelector("#se_mere").addEventListener("click", () => visDetaljer(queen)); //laver eventlistener på queen, der fører én til en funktion, hvor man kan se detaljer om den valgte ret
 
              //tilføjer klon til oversigten sektion

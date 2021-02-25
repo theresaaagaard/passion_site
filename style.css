@@ -680,6 +680,10 @@ article img {
         text-align: justify;
     }
 
+    .billede {
+        cursor: pointer;
+    }
+
     /*------BOOKING SEKTION------*/
     #booking {
         display: grid;
