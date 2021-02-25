@@ -1,9 +1,7 @@
  //henter data fra restdb
  const medieurl = "https://dragqueens-8f96.restdb.io/media/";
  const myHeaders = {
-
      "x-apikey": "602e81e35ad3610fb5bb6352"
-
  }
 
  //opretter variabel, hvor burgermenu er lukket
@@ -97,6 +95,7 @@
          }
      })
  }
+
  //gå til detaljesiden når der klikkes på den enkelte queen
  function visDetaljer(hvem) {
      location.href = `detail.html?id=${hvem._id}`;
