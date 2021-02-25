@@ -34,6 +34,7 @@
             document.querySelector(".talent").textContent = queen.talent;
             document.querySelector(".placering").textContent = queen.placering;
             document.querySelector(".varighed").textContent = queen.varighed + " timer";
+            document.querySelector(".pris").textContent = queen.pris;
             document.querySelector(".beskrivelse").textContent = queen.beskrivelse;
             document.querySelector("#rating_billede").src = medieurl + queen.rating;
 
