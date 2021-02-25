@@ -21,11 +21,11 @@ main {
     margin-bottom: 180px;
 }
 
-h2 {
+h3 {
     font-size: 1.5rem;
 }
 
-h3 {
+h2 {
     font-size: 1rem;
 }
 
@@ -215,7 +215,7 @@ button {
 
 button:hover {
     background-color: none;
-    color: #FF1ACA;
+    color: #c70099;
 }
 
 a {
@@ -224,7 +224,7 @@ a {
 }
 
 a:hover {
-    color: #FF1ACA;
+    color: #c70099;
     transition: .3s;
     /*skaber en blød hover-effekt*/
 }
@@ -460,13 +460,13 @@ article {
     display: grid;
 }
 
-#se_mere,
+.se_mere,
 article img,
 article p {
     grid-area: 1/1;
 }
 
-#se_mere {
+.se_mere {
     place-self: end center;
     margin-bottom: 30px;
     background-color: rgb(255, 255, 255, .8);
@@ -630,7 +630,7 @@ article img {
         height: 90%;
     }
 
-    #se_mere:hover {
+    .se_mere:hover {
         background-color: #2f2f2f;
         padding: 8px 40px;
         border-radius: 20px;
@@ -668,7 +668,7 @@ article img {
     }
 
     .kategorier button:hover {
-        color: #FF1ACA;
+        color: #c70099;
         transition: .3s;
     }
 
@@ -700,8 +700,8 @@ article img {
         padding: 50px;
     }
 
-    #booking h2 {
-        font-size: 2rem;
+    #booking h3 {
+        font-size: 2rem !important;
     }
 
     #booking p {
@@ -1039,7 +1039,7 @@ article img {
 /*--------effekter--------*/
 
 .valgt {
-    color: #ff1aca !important;
+    color: #c70099 !important;
 }
 
 .hidden {
