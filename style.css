@@ -214,7 +214,7 @@ button {
 }
 
 button:hover {
-    background-color: none;
+    background-color: white;
     color: #c70099;
 }
 
@@ -1079,7 +1079,7 @@ article img {
 }
 
 @keyframes slideout_kf {
-    / 100% {
+    100% {
         transform-origin: 0% 0%;
         transform: translateX(100%);
     }
