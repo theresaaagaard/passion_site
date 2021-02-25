@@ -5,9 +5,9 @@
      "x-apikey": "602e81e35ad3610fb5bb6352"
 
  }
+
  //opretter variabel, hvor burgermenu er lukket
  let menuIsOpen = false;
-
 
  //lytter til om DOM er loaded
  document.addEventListener("DOMContentLoaded", start);
@@ -17,7 +17,6 @@
  let queens;
  //opretter variabel til filtering
  let filter = "alle";
-
 
  //når dom er loaded begynder start funktion
  function start() {
@@ -40,17 +39,18 @@
      //lytter til klik på burgermenuen
      document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 
-     //opretter variabel til filteringsknapper og lytter til klik på hvert enkelt og kalder funktion
+     //opretter variabel til filtreringsknapper og lytter til klik på hvert enkelt og kalder funktion
      const filterKnapper = document.querySelectorAll(".kategorier button");
-     filterKnapper.forEach(knap => knap.addEventListener("click", filtrerKategorier));
+     filterKnapper.forEach(knap => knap.addEventListener("click", valgtKategori));
 
      //load json data
      loadJSON();
  }
 
- function filtrerKategorier() {
+ //viser den valgte kategori efter klik på filtreringsknap
+ function valgtKategori() {
      filter = this.dataset.kategori;
-     console.log("filtrerKategorier");
+     console.log("valgtKategori");
 
      //fjerne og tilføjer valgt class på den valgte
      document.querySelector(".valgt").classList.remove("valgt");
@@ -102,7 +102,6 @@
      location.href = `detail.html?id=${hvem._id}`;
  }
 
-
  // toggle på sortér-knappen og kalder sorterMenu funktion
  document.querySelector(".sorter").addEventListener("click", sorterMenu);
 
@@ -111,7 +110,6 @@
      console.log("sorterMenu");
      document.querySelector(".kategorier").classList.toggle("hidden");
  }
-
 
  //------------------BURGER MENU-------------------
  function toggleMenu() {
